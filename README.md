@@ -5,6 +5,10 @@
 
 ## 目前处于写基本功能界面阶段
 
+## 截图预览
+
+![](http://p1.bpimg.com/567571/328cbe99d611a1c5.png)
+
 ## Build Setup
 
 ``` bash
