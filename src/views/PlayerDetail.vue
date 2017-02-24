@@ -3,7 +3,7 @@
     <div class="player-detail">
         <div class="player-detail__content">
             <mu-appbar>
-                <mu-icon-button icon='expand_more' slot="left" />
+                <mu-icon-button icon='expand_more' slot="left" @click="hidePlayerDetail"/>
             </mu-appbar>
             <div class="cover">
                 <img src="//pic.xiami.net/images/album/img17/23517/4386281386439629.jpg@!c-400-400">
@@ -43,12 +43,23 @@
 </template>
 
 <script>
+    import { mapGetters } from 'vuex';
+
     export default {
         data() {
-            return {
-                value2: 50
+            return { value2: 50 }
+        },
+        computed: { 
+            ...mapGetters(['player']),
+            songList() {
+
             }
-        }
+        },
+        methods: {
+            hidePlayerDetail() {
+                this.$store.commit("togglePlayerDetail", false);
+            }
+        }        
     }
 
 </script>
@@ -176,13 +187,13 @@
         width: 96px !important;
         height: 96px !important;
     }
-
-    .skip{
+    
+    .skip {
         width: 64px !important;
         height: 64px !important;
     }
-
-    .skip .mu-icon{
+    
+    .skip .mu-icon {
         font-size: 32px;
     }
     

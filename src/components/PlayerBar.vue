@@ -3,10 +3,10 @@
         <mu-bottom-nav class="player-bar">
 
             <div class="player-bar__content">
-                <div class="cover">
+                <div class="cover" @click="showPlayerDetail">
                     <img src="//pic.xiami.net/images/album/img17/23517/4386281386439629.jpg@!c-400-400">
                 </div>
-                <div class="info">
+                <div class="info" @click="showPlayerDetail">
                     <div class="name">想自由</div>
                     <div class="artist">林宥嘉</div>
                 </div>
@@ -14,7 +14,10 @@
                     <mu-icon-button icon="play_arrow" iconClass="icon-lg" />
                     <mu-icon-button icon="skip_next" iconClass="icon-lg" />
                 </div>
-                <div class="pro"></div>
+                <div class="pro">
+                    <div class="pro-load proload" :style="{'-webkit-transform':'translateX(' + prBufferedTime +'%)' }"></div>
+                    <div class="pro-play proplay" :style="{'-webkit-transform':'translateX(' + prCurrentTime +'%)' }"></div>
+                </div>
             </div>
 
             <div class="blur-bg">
@@ -30,9 +33,14 @@
     export default {
         data() {
             return {
+                prBufferedTime: 50,
+                prCurrentTime: 50
             }
         },
         methods: {
+            showPlayerDetail() {
+                this.$store.commit("togglePlayerDetail", true);
+            }
         }
     }
 
@@ -111,6 +119,23 @@
             &> .mu-icon-button {
                 height: 50px;
                 width: 50px;
+            }
+        }
+        &>.pro {
+            z-index: 8;
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, .3);
+            &>.pro-play {
+                height: 2px;
+                width: 100%;
+                position: absolute;
+                left: -100%;
+                bottom: 0;
+                background-color: #ff8833;
             }
         }
     }
