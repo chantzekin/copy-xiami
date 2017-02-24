@@ -29,17 +29,6 @@
                 </collect-tile>
             </template>
         </collect-grid>
-        <!--<mu-grid-list class="collections" cols="3">
-            <mu-sub-header>为你推荐
-                <a class="more" href="">更多</a>
-            </mu-sub-header>
-            <mu-grid-tile v-for="col in collections">
-                <img :src="col.logo" />
-                <span slot="title">{{col.name }}</span>
-                <span slot="subTitle">{{ col.author }}</span>
-                <mu-icon-button icon="hearing" slot="action" />
-            </mu-grid-tile>
-        </mu-grid-list>-->
     </div>
 </template>
 
@@ -53,7 +42,7 @@
         data() {
             return {
                 swiperOpt: {
-                    autoplay: 5000,
+                    autoplay: 3000,
                     pagination: '.swiper-pagination'
                 },
                 swiperSlides: this.$store.getters.homeData.banner,
