@@ -8,6 +8,7 @@
 ## 截图预览
 
 ![](http://p1.bpimg.com/567571/328cbe99d611a1c5.png)
+![](http://p1.bpimg.com/567571/30771e764e5c745c.png)
 
 ## Build Setup
 
