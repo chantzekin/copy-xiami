@@ -15,7 +15,7 @@
         <collect-grid class="collections">
             <sub-title>
                 <span>为你推荐</span>
-                <a href="javascript:;" slot="right">更多</a>
+                <router-link :to="{ path: 'collect' }" slot="right" replace>更多</router-link>
             </sub-title>
             <template slot="gridContent">
                 <collect-tile v-for="col in collections">
