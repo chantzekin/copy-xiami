@@ -5,17 +5,20 @@
       <router-view></router-view>
     </keep-alive>
     <player-bar></player-bar>
+    <player-detail v-show="0"></player-detail>
   </div>
 
 </template>
 
 <script>
   import playerBar from './components/PlayerBar'
+  import playerDetail from './views/PlayerDetail'
 
   export default {
     name: 'app',
     components: {
-      playerBar
+      playerBar,
+      playerDetail
     }
   }
 
