@@ -68,6 +68,8 @@
         left: 0;
         padding-top: 104px;
         overflow-y: auto;
+        overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
+        padding-bottom: 56px;
     }
 </style>

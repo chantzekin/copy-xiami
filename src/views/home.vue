@@ -12,8 +12,27 @@
                 <span>{{ radio.title }}</span>
             </mu-flexbox-item>
         </mu-flexbox>
+        <collect-grid class="collections">
+            <sub-title>
+                <span>为你推荐</span>
+                <a href="javascript:;" slot="right">更多</a>
+            </sub-title>
+            <template slot="gridContent">
+                <collect-tile v-for="col in collections">
+                    <img slot="cover" :src="col.logo" />
+                    <span slot="playCount" v-if="col.play_count">
+                        <mu-icon value="hearing"/>
+                        {{ col.play_count | formatCount }}
+                    </span>
+                    <span slot="title">{{ col.name }}</span>
+                    <span slot="author">{{ col.author }}</span>
+                </collect-tile>
+            </template>
+        </collect-grid>
         <!--<mu-grid-list class="collections" cols="3">
-            <mu-sub-header>为你推荐</mu-sub-header>
+            <mu-sub-header>为你推荐
+                <a class="more" href="">更多</a>
+            </mu-sub-header>
             <mu-grid-tile v-for="col in collections">
                 <img :src="col.logo" />
                 <span slot="title">{{col.name }}</span>
@@ -26,6 +45,9 @@
 
 <script>
     import { swiper, swiperSlide } from 'vue-awesome-swiper'
+    import subTitle from '../components/SubTitle'
+    import collectGrid from '../components/CollectGrid'
+    import collectTile from '../components/CollectTile'
 
     export default {
         data() {
@@ -41,7 +63,19 @@
         },
         components: {
             swiper,
-            swiperSlide
+            swiperSlide,
+            subTitle,
+            collectGrid,
+            collectTile
+        },
+        filters: {
+            formatCount(v) {
+                if (v < 9999) {
+                    return v
+                } else {
+                    return (v / 10000).toFixed(1) + '万'
+                }
+            }
         }
     }
 
@@ -56,12 +90,16 @@
         }
     }
     
+    .radios,
+    .collections {
+        border-bottom: 10px solid #F8F8F8;
+    }
+    
     .radios {
         display: flex;
         justify-content: space-between;
         height: 86px;
         width: 100%;
-        border-bottom: 10px solid #F8F8F8;
         img {
             width: 30px;
             height: 30px;
