@@ -2,6 +2,9 @@
 
 > Xiami Music clone built with Vue.js  
 
+
+## 目前处于写基本功能界面阶段
+
 ## Build Setup
 
 ``` bash
