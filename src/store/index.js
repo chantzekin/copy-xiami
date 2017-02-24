@@ -11,11 +11,21 @@ const store = new Vuex.Store({
             banner: HomeData.data.list[0].banner,
             radios: HomeData.data.list[1].radios,
             collections: HomeData.data.list[2].collections
+        },
+
+        player: {
+            isShowPlayerDetail: false
         }
     },
     getters: {
         homeData: state => {
             return state.homeData;
+        },
+        player: state => state.player
+    },
+    mutations: {
+        togglePlayerDetail: (state, flag) => {
+            state.player.isShowPlayerDetail = flag;
         }
     }
 })
