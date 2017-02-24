@@ -15,11 +15,11 @@
             </mu-tabs>
         </div>
 
-        <div class="view">
+        <transition :name="transitionName">
             <keep-alive>
-                <router-view></router-view>
+                <router-view class="child-view"></router-view>
             </keep-alive>
-        </div>
+        </transition>
     </div>
 
 </template>
@@ -28,7 +28,23 @@
     export default {
         data() {
             return {
+                transitionName: 'fade',
                 activeTab: 'home'
+            }
+        },
+        created() {
+            var tmpArr = this.$route.path.split('/')
+            if (tmpArr[1] === 'index') {
+                this.handleTabChange(tmpArr[2])
+            }
+        },
+        watch: {
+            '$route'(to, from) {
+                const path = to.path
+                var tmpArr = path.split('/')
+                if (tmpArr[1] === 'index') {
+                    this.handleTabChange(tmpArr[2])
+                }
             }
         },
         methods: {
@@ -61,7 +77,7 @@
         }
     }
     
-    .view {
+    .child-view {
         position: absolute;
         top: 0;
         right: 0;
@@ -72,5 +88,16 @@
         overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
         padding-bottom: 56px;
+        transition: all .3s cubic-bezier(.55, 0, .1, 1);
+    }
+    
+    .fade-enter-active,
+    .fade-leave-active {
+        transition: opacity .5s ease;
+    }
+    
+    .fade-enter,
+    .fade-leave-active {
+        opacity: 0
     }
 </style>
