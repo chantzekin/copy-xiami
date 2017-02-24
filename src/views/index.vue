@@ -34,6 +34,7 @@
         methods: {
             handleTabChange(val) {
                 this.activeTab = val
+                this.$router.replace({ path: '/index/' + val })
             }
         }
     }

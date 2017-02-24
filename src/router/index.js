@@ -9,22 +9,30 @@ export default new Router({
   routes: [
     {
       path: '/',
+      redirect: '/index'
+    },
+    {
+      path: '/index',
       component: require('../views/index'),
       children: [
         {
           path: '',
+          redirect: 'home'
+        },
+        {
+          path: 'home',
           component: require('../views/home')
         }, {
-          path: '/collect',
+          path: 'collect',
           component: require('../views/collect')
         }, {
-          path: '/rank',
+          path: 'rank',
           component: require('../views/rank')
         }, {
-          path: '/radio',
+          path: 'radio',
           component: require('../views/radio')
         }, {
-          path: '/mv',
+          path: 'mv',
           component: require('../views/mv')
         }
       ]
