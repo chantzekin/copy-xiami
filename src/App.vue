@@ -4,8 +4,12 @@
     <keep-alive>
       <router-view></router-view>
     </keep-alive>
-    <player-bar></player-bar>
-    <player-detail v-show="0"></player-detail>
+    <transition name="slide-delay">
+      <player-bar v-show="!player.isShowPlayerDetail"></player-bar>
+    </transition>
+    <transition name="slide">
+      <player-detail v-show="player.isShowPlayerDetail"></player-detail>
+    </transition>
   </div>
 
 </template>
@@ -14,8 +18,15 @@
   import playerBar from './components/PlayerBar'
   import playerDetail from './views/PlayerDetail'
 
+  import { mapGetters } from 'vuex'
+
   export default {
-    name: 'app',
+    data() {
+
+    },
+    computed: { 
+        ...mapGetters(['player'])
+    },
     components: {
       playerBar,
       playerDetail
@@ -40,5 +51,26 @@
     bottom: 0;
     left: 0;
     color: #2c3e50;
+  }
+  
+  .slide-enter-active,
+  .slide-leave-active {
+    transition: all .3s ease;
+  }
+  
+  .slide-enter,
+  .slide-leave-active {
+    transform: translateY(100%);
+  }
+
+  .slide-delay-enter-active,
+  .slide-delay-leave-active {
+    transition: all .3s ease;
+    transition-delay: .2s;
+  }
+  
+  .slide-delay-enter,
+  .slide-delay-leave-active {
+    transform: translateY(100%);
   }
 </style>
