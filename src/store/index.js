@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import Axios from 'axios'
+
 import HomeData from './homeData'
+import CollectData from './collectData'
 
 Vue.use(Vuex)
 
@@ -12,7 +14,7 @@ const store = new Vuex.Store({
             radios: HomeData.data.list[1].radios,
             collections: HomeData.data.list[2].collections
         },
-
+        collectData: CollectData.data.collects,
         player: {
             isShowPlayerDetail: false
         }
@@ -21,6 +23,7 @@ const store = new Vuex.Store({
         homeData: state => {
             return state.homeData;
         },
+        collectData: state => state.collectData,
         player: state => state.player
     },
     mutations: {
