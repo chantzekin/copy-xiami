@@ -22,7 +22,9 @@
 
   export default {
     data() {
+      return {
 
+      }
     },
     computed: { 
         ...mapGetters(['player'])
@@ -62,7 +64,7 @@
   .slide-leave-active {
     transform: translateY(100%);
   }
-
+  
   .slide-delay-enter-active,
   .slide-delay-leave-active {
     transition: all .3s ease;
