@@ -128,7 +128,7 @@
     .collect-item__cover .play {
         position: absolute;
         right: 4px;
-        bottom: 6px;
+        bottom: 4px;
         color: #ff8833;
         font-size: 32px;
         z-index: 2;
@@ -140,7 +140,7 @@
         position: absolute;
         width: 12px;
         height: 12px;
-        bottom: 16px;
+        bottom: 14px;
         right: 15px;
         z-index: 1;
     }
