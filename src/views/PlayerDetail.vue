@@ -27,7 +27,8 @@
             <div class="ctr">
                 <mu-icon-button icon='shuffle' slot="left" />
                 <mu-icon-button class="skip" icon='skip_previous' slot="left" />
-                <mu-icon-button class="play-pause" icon='play_arrow' slot="left" />
+                <!--play_circle_outline : pause_circle_outline-->
+                <mu-icon-button class="play-pause" icon='play_circle_outline' slot="left" />
                 <mu-icon-button class="skip" icon='skip_next' slot="left" />
                 <mu-icon-button icon='more_horiz' slot="left" />
             </div>
