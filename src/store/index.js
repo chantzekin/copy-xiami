@@ -4,6 +4,7 @@ import Axios from 'axios'
 
 import HomeData from './homeData'
 import CollectData from './collectData'
+import RankData from './rankData'
 
 Vue.use(Vuex)
 
@@ -15,6 +16,7 @@ const store = new Vuex.Store({
             collections: HomeData.data.list[2].collections
         },
         collectData: CollectData.data.collects,
+        rankData: RankData.data.common_list,
         player: {
             isShowPlayerDetail: false
         }
@@ -24,6 +26,7 @@ const store = new Vuex.Store({
             return state.homeData;
         },
         collectData: state => state.collectData,
+        rankData: state => state.rankData,
         player: state => state.player
     },
     mutations: {
