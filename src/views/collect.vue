@@ -2,7 +2,6 @@
     <div>
         <mu-list class="collect-list">
             <mu-sub-header>推荐</mu-sub-header>
-            <mu-divider />
             <template v-for="collect in collects">
                 <mu-list-item class="collect-item-wrapper">
                     <div class="collect-item">
@@ -41,7 +40,6 @@
             playCount
         },
         created() {
-            //console.log(this.$store.getters.collectData);
         }
     }
 

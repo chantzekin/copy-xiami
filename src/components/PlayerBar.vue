@@ -1,14 +1,15 @@
 <template>
     <div class="foot">
         <mu-bottom-nav class="player-bar">
-
+            <audio :src="audio.songUrl" autoplay id="AudioMain" @timeupdate="change()" @ended="next()" @error="next()">
+            </audio>
             <div class="player-bar__content">
                 <div class="cover" @click="showPlayerDetail">
-                    <img src="//pic.xiami.net/images/album/img17/23517/4386281386439629.jpg@!c-400-400">
+                    <img :src="audio.coverUrl">
                 </div>
                 <div class="info" @click="showPlayerDetail">
-                    <div class="name">想自由</div>
-                    <div class="artist">林宥嘉</div>
+                    <div class="name">{{ audio.title }}</div>
+                    <div class="artist">{{ audio.singer }} - {{ audio.ablum }}</div>
                 </div>
                 <div class="ctr">
                     <mu-icon-button icon="play_arrow" iconClass="icon-lg" />
@@ -21,7 +22,7 @@
             </div>
 
             <div class="blur-bg">
-                <div class="o-bg" style="background-image:url(//pic.xiami.net/images/album/img17/23517/4386281386439629.jpg@!c-400-400)"></div>
+                <div class="o-bg" :style="`background-image:url(${audio.coverUrl})`"></div>
                 <div class="mask"></div>
             </div>
 
@@ -30,12 +31,18 @@
 </template>
 
 <script>
+    import { mapGetters } from 'vuex';
+
     export default {
+        name: 'PlayerBar',
         data() {
             return {
                 prBufferedTime: 50,
                 prCurrentTime: 50
             }
+        },
+        computed: {
+            ...mapGetters(['audio', 'audioLoadding', 'isPlay'])
         },
         methods: {
             showPlayerDetail() {
