@@ -8,7 +8,7 @@ export function formatCount(v) {
 
 export function formatTime(v) {
     let length = Math.floor(parseInt(v));
-    let min = Math.floor(value / 60);
+    let min = Math.floor(v / 60);
     let sec = length % 60;
     if (min < 10) {
         min = '0' + min;
