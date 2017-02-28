@@ -1,8 +1,7 @@
 <template>
     <div class="foot">
         <mu-bottom-nav class="player-bar">
-            <audio :src="audio.songUrl" id="AudioPlay"
-              @timeupdate="change()" @ended="next()" @error="next()">
+            <audio :src="audio.songUrl" id="AudioPlay" @timeupdate="change()" @ended="next()" @error="next()">
             </audio>
             <div class="player-bar__content">
                 <div class="cover" @click="showPlayerDetail">
@@ -13,12 +12,13 @@
                     <div class="artist">{{ audio.singer }} - {{ audio.ablum }}</div>
                 </div>
                 <div class="ctr">
-                    <mu-icon-button icon="play_arrow" iconClass="icon-lg" />
+                    <mu-icon-button :icon="isPlaying? 'pause' : 'play_arrow'" iconClass="icon-lg" @click="toggleStatus()">
+                    </mu-icon-button>
                     <mu-icon-button icon="skip_next" iconClass="icon-lg" />
                 </div>
                 <div class="pro">
-                    <div class="pro-load proload" :style="{'-webkit-transform':'translateX(' + prBufferedTime +'%)' }"></div>
-                    <div class="pro-play proplay" :style="{'-webkit-transform':'translateX(' + prCurrentTime +'%)' }"></div>
+                    <div class="pro-load proload" :style="{'-webkit-transform':'translateX(' + bufferedTimePercent +'%)' }"></div>
+                    <div class="pro-play proplay" :style="{'-webkit-transform':'translateX(' + currentTimePercent +'%)' }"></div>
                 </div>
             </div>
 
@@ -38,16 +38,53 @@
         name: 'PlayerBar',
         data() {
             return {
-                prBufferedTime: 50,
-                prCurrentTime: 50
             }
         },
         computed: {
-            ...mapGetters(['audio', 'audioLoadding', 'isPlay'])
+            ...mapGetters([
+            'audio', 
+            'audioLoadding',
+            'isPlaying', 
+            'currentTimePercent',
+            'bufferedTimePercent'
+            ])
+        },
+        watch() {
         },
         methods: {
             showPlayerDetail() {
                 this.$store.commit("togglePlayerDetail", true);
+            },
+            change() {
+                var vm = this;
+                var audioEl = document.getElementById('AudioPlay');
+                var curTime = parseInt(audioEl.currentTime);
+                // 防止在未加载完成时，切歌出现的错误
+                audioEl.onsuspend = function () {
+                    var timeRange = audioEl.buffered
+                    if (timeRange.length > 0 && audioEl.duration > 0) {
+                        vm.$store.commit('updateBufferedTime', parseInt(audioEl.buffered.end(0)))
+                    }
+                }
+                vm.$store.commit('updateDurationTime', parseInt(audioEl.duration));
+                if (this.audio.change) {
+                    audioEl.currentTime = this.audio.tmpCurrentTime
+                    this.$store.commit('setChange', false)
+                } else {
+                    this.$store.commit('updateCurrentTime', curTime)
+                }
+            },
+            next() {
+
+            },
+            toggleStatus() {
+                if (this.isPlaying) {
+                    document.getElementById('AudioPlay').pause()
+                    this.$store.commit('pause')
+                } else {
+                    document.getElementById('AudioPlay').play()
+                    this.$store.commit('play')
+                }
             }
         }
     }

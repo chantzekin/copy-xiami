@@ -3,16 +3,16 @@
     <div class="player-detail">
         <div class="player-detail__content">
             <mu-appbar>
-                <mu-icon-button icon='expand_more' slot="left" @click="hidePlayerDetail"/>
+                <mu-icon-button icon='expand_more' slot="left" @click="hidePlayerDetail" />
             </mu-appbar>
             <div class="cover">
                 <img src="//pic.xiami.net/images/album/img17/23517/4386281386439629.jpg@!c-400-400">
             </div>
             <div class="process">
-                <mu-slider v-model="value2" class="demo-slider" />
+                <mu-slider v-model="currentTimePercent" class="demo-slider" />
                 <div class="time">
-                    <time id="cur">1:20</time>
-                    <time id="total">2:40</time>
+                    <time id="cur">{{ audio.currentTime | formatTime }}</time>
+                    <time id="total">{{ audio.durationTime | formatTime }}</time>
                 </div>
             </div>
             <div class="info">
@@ -27,8 +27,10 @@
             <div class="ctr">
                 <mu-icon-button icon='shuffle' slot="left" />
                 <mu-icon-button class="skip" icon='skip_previous' slot="left" />
-                <!--play_circle_outline : pause_circle_outline-->
-                <mu-icon-button class="play-pause" icon='play_circle_outline' slot="left" />
+                <mu-icon-button class="play-pause"
+                    @click="toggleStatus()" 
+                    :icon='!isPlaying? "play_circle_outline" : "pause_circle_outline"' 
+                    slot="left" />
                 <mu-icon-button class="skip" icon='skip_next' slot="left" />
                 <mu-icon-button icon='more_horiz' slot="left" />
             </div>
@@ -51,7 +53,12 @@
             return { value2: 50 }
         },
         computed: { 
-            ...mapGetters(['player']),
+            ...mapGetters([
+                'audio',
+                'player',
+                'isPlaying',
+                'currentTimePercent'
+            ]),
             songList() {
 
             }
@@ -59,8 +66,17 @@
         methods: {
             hidePlayerDetail() {
                 this.$store.commit("togglePlayerDetail", false);
+            },
+            toggleStatus() {
+                if (this.isPlaying) {
+                    document.getElementById('AudioPlay').pause()
+                    this.$store.commit('pause')
+                } else {
+                    document.getElementById('AudioPlay').play()
+                    this.$store.commit('play')
+                }
             }
-        }        
+        }
     }
 
 </script>
