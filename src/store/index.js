@@ -50,6 +50,7 @@ const store = new Vuex.Store({
         player: state => state.player,
         isPlaying: state => state.isPlaying,
         currentTimePercent: state => {
+            if (state.audio.durationTime === 0) return 0;
             return state.audio.currentTime / state.audio.durationTime * 100;
         },
         bufferedTimePercent: state => {
@@ -74,7 +75,13 @@ const store = new Vuex.Store({
         },
         updateBufferedTime(state, time) {
             state.audio.bufferedTime = time
-        }
+        },
+        changeTime(state, time) {
+            state.audio.tmpCurrentTime = time
+        }, 
+        setChange(state, flag) {
+            state.audio.change = flag
+        },
     }
 })
 

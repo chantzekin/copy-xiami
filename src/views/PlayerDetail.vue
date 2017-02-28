@@ -9,7 +9,8 @@
                 <img src="//pic.xiami.net/images/album/img17/23517/4386281386439629.jpg@!c-400-400">
             </div>
             <div class="process">
-                <mu-slider v-model="currentTimePercent" class="demo-slider" />
+                <mu-slider v-model="currentTimePercent"
+                     @change="changeTime" />
                 <div class="time">
                     <time id="cur">{{ audio.currentTime | formatTime }}</time>
                     <time id="total">{{ audio.durationTime | formatTime }}</time>
@@ -27,9 +28,7 @@
             <div class="ctr">
                 <mu-icon-button icon='shuffle' slot="left" />
                 <mu-icon-button class="skip" icon='skip_previous' slot="left" />
-                <mu-icon-button class="play-pause"
-                    @click="toggleStatus()" 
-                    :icon='!isPlaying? "play_circle_outline" : "pause_circle_outline"' 
+                <mu-icon-button class="play-pause" @click="toggleStatus()" :icon='!isPlaying? "play_circle_outline" : "pause_circle_outline"'
                     slot="left" />
                 <mu-icon-button class="skip" icon='skip_next' slot="left" />
                 <mu-icon-button icon='more_horiz' slot="left" />
@@ -55,9 +54,9 @@
         computed: { 
             ...mapGetters([
                 'audio',
-                'player',
-                'isPlaying',
-                'currentTimePercent'
+            'player',
+            'isPlaying',
+            'currentTimePercent'
             ]),
             songList() {
 
@@ -75,6 +74,12 @@
                     document.getElementById('AudioPlay').play()
                     this.$store.commit('play')
                 }
+            },
+            changeTime(value) {
+                var time = (value * this.audio.durationTime) / 100
+                this.$store.commit('changeTime', time)
+                this.$store.commit('setChange', true)
+                console.log('chang')
             }
         }
     }
