@@ -18,3 +18,14 @@ export function formatTime(v) {
     }
     return min + ':' + sec;
 }
+
+export function formatTags(v) {
+    if (!v) return '';
+    var tags = v[0];
+
+    return tags.split('，').slice(0, 3).join('#');
+}
+
+export function formatImageExt(v) {
+    return v.replace('webp', 'jpg');
+}

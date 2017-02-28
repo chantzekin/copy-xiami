@@ -1,6 +1,6 @@
 <template>
 
-    <div class="collect-tile">
+    <div class="collect-tile" @clcik="handleClick">
         <div class="collect-tile__cover">
             <slot name="cover"></slot>
             <i class="collect-tile__play-count">
@@ -18,6 +18,16 @@
 </template>
 
 <script>
+    export default {
+        props: {
+
+        },
+        methods: {
+            handleClick(e) {
+                this.$emit('click', e)
+            },
+        }
+    }
 
 </script>
 
@@ -43,8 +53,8 @@
     }
     
     .collect-tile__title {
-        height: 2.4em;
-        margin-bottom: 2px;
+        height: 2.3em;
+        margin-bottom: .8em;
         overflow: hidden;
         text-overflow: ellipsis;
     }

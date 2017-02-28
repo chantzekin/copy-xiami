@@ -5,12 +5,16 @@ import App from './App'
 import router from './router'
 import store from './store'
 import * as filters from './filters'
+import Axios from 'axios'
+import VueLazyload from 'vue-lazyload'
 
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
 import 'assets/theme.less'
 
 Vue.use(MuseUI);
+Vue.use(VueLazyload)
+Vue.prototype.$http = Axios;
 
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])

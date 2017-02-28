@@ -27,7 +27,15 @@ module.exports = {
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/api': {
+        target: 'http://192.168.1.123:8081',//要跨域访问的API域名
+        rewrite: function (req) {
+          //可以用正則方式替代掉，這樣往後 /api/xxx/xxx 之類的網址，就會自動匹配了
+          req.url = req.url.replace(/^\/api/, '');
+        }
+      }
+    },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README
     // (https://github.com/webpack/css-loader#sourcemaps)

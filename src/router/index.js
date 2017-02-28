@@ -38,8 +38,13 @@ export default new Router({
       ]
     },
     {
-      path: '/search',
+      path: 'search',
       component: require('../views/search')
+    },
+    {
+      name: 'playList',
+      path: '/playlist/:id',
+      component: require('../views/PlayList')
     }
   ]
 })

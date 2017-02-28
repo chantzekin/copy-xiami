@@ -18,12 +18,12 @@
                 <router-link :to="{ path: 'collect' }" slot="right" replace>更多</router-link>
             </sub-title>
             <template slot="gridContent">
-                <collect-tile v-for="col in collections">
+                <collect-tile v-for="col in collections" @click.native="toPlayList(col.url)">
                     <img slot="cover" :src="col.logo" />
                     <span slot="playCount" v-if="col.play_count">
-                        <mu-icon value="hearing"/>
-                        {{ col.play_count | formatCount }}
-                    </span>
+                            <mu-icon value="hearing"/>
+                            {{ col.play_count | formatCount }}
+                        </span>
                     <span slot="title">{{ col.name }}</span>
                     <span slot="author">{{ col.author }}</span>
                 </collect-tile>
@@ -48,6 +48,19 @@
                 swiperSlides: this.$store.getters.homeData.banner,
                 radios: this.$store.state.homeData.radios,
                 collections: this.$store.state.homeData.collections
+            }
+        },
+        methods: {
+            toPlayList(url) {
+                var id;
+                if (url.indexOf('xiami://collect/')) return;
+                id = url.replace('xiami://collect/', '');
+
+                this.$router.push({
+                    name: 'playList',
+                    params: { id: id }
+                });
+
             }
         },
         components: {

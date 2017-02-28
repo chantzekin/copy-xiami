@@ -1,9 +1,11 @@
 <template>
 
   <div id="app">
-    <keep-alive>
-      <router-view></router-view>
-    </keep-alive>
+    <transition name="slide-left">
+      <keep-alive>
+        <router-view class="sibling-view"></router-view>
+      </keep-alive>
+    </transition>
     <transition name="slide-delay">
       <player-bar v-show="!player.isShowPlayerDetail"></player-bar>
     </transition>
@@ -54,6 +56,19 @@
     left: 0;
     color: #2c3e50;
   }
+
+  .sibling-view {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 56px;
+        transition: all .3s cubic-bezier(.55, 0, .1, 1);
+    }
   
   .slide-enter-active,
   .slide-leave-active {
@@ -74,5 +89,17 @@
   .slide-delay-enter,
   .slide-delay-leave-active {
     transform: translateY(100%);
+  }
+  
+  .slide-left-enter,
+  .slide-right-leave-active {
+    opacity: 0;
+    transform: translate(30px, 0);
+  }
+  
+  .slide-left-leave-active,
+  .slide-right-enter {
+    opacity: 0;
+    transform: translate(-30px, 0);
   }
 </style>

@@ -1,7 +1,8 @@
 <template>
     <div class="foot">
         <mu-bottom-nav class="player-bar">
-            <audio :src="audio.songUrl" autoplay id="AudioMain" @timeupdate="change()" @ended="next()" @error="next()">
+            <audio :src="audio.songUrl" id="AudioPlay"
+              @timeupdate="change()" @ended="next()" @error="next()">
             </audio>
             <div class="player-bar__content">
                 <div class="cover" @click="showPlayerDetail">
