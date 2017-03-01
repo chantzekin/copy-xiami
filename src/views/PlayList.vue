@@ -7,7 +7,7 @@
             <div class="cover" :style="'background-image:url(' + playList.cover  + ')'"></div>
             <div class="mask" style="opacity:0.6;"></div>
         </div>
-        <div class="container">
+        <div class="container scroll-view">
             <div class="play-list__hd">
                 <div class="play-list__info">
                     <mu-flexbox>
@@ -61,7 +61,9 @@
                     <mu-divider />
                     <div v-for="song in playList.songList">
                         <div class="song-item">
-                            <div class="cover"><img :src="song.album.cover | formatImageExt" /></div>
+                            <div class="cover">
+                                <img :src="song.album.cover | formatImageExt" />
+                                </div>
                             <mu-list-item class="content" :title="song.name">
                                 <span slot="describe">
                                 <span v-for="artist in song.artists">
@@ -70,7 +72,8 @@
                                     </template>
                                 </span>
                                 </span>
-                                <mu-icon-button slot="right" icon="more_vert"></mu-icon-button>
+                                <mu-icon-button slot="right" icon="more_horiz">                                    
+                                </mu-icon-button>
                             </mu-list-item>
                         </div>
                         <mu-divider inset/>
@@ -145,7 +148,7 @@
                         console.log(err);
                     });
             }
-            
+
         },
         created() {
             // 组件创建完后获取数据，
@@ -168,7 +171,11 @@
 </script>
 
 <style lang="scss" scope>
-    .container {
+    .play-list {
+        display: flex;
+    }
+    
+    .scroll-view {
         position: absolute;
         top: 0;
         right: 0;
@@ -178,10 +185,21 @@
         overflow-y: auto;
         overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
-        padding-bottom: 56px;
+    }
+    
+    .container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .play-list__hd{
+        flex: 0 0 auto;
     }
     
     .play-list_bd {
+        flex: 1;
+        padding-bottom: 56px;
         background-color: #fff;
     }
     
@@ -189,31 +207,26 @@
         overflow: hidden;
         position: absolute;
         left: 0;
-        right: 0;
         top: 0;
-        bottom: 0;
         z-index: 0;
-        transform: scale(1.5);
-        .cover {
+        width: 100%;
+        height: 100%;
+        .cover,
+        .mask {
             position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 2;
             width: 100%;
             height: 100%;
+        }
+        .cover {
+            z-index: 2;
             background-size: cover;
             background-position: center;
             filter: blur(20px);
+            transform: scale(1.5);
         }
         .mask {
             position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
             z-index: 3;
-            width: 100%;
-            height: 100%;
             background-color: rgba(0, 0, 0, .8);
         }
     }
@@ -329,6 +342,9 @@
         }
         .content {
             flex: 1;
+            .mu-item-right{
+                padding-top: 8px;
+            }
         }
         .mu-item-right {
             flex: 0 0 auto;

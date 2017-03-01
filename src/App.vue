@@ -56,19 +56,27 @@
     left: 0;
     color: #2c3e50;
   }
-
+  
   .sibling-view {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        overflow-y: auto;
-        overflow-x: hidden;
-        -webkit-overflow-scrolling: touch;
-        padding-bottom: 56px;
-        transition: all .3s cubic-bezier(.55, 0, .1, 1);
-    }
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 56px;
+    transition: all .3s cubic-bezier(.55, 0, .1, 1);
+  }
+  
+  .scroll-view {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
   
   .slide-enter-active,
   .slide-leave-active {
