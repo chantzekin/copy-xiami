@@ -59,12 +59,14 @@
                         </div>
                     </mu-sub-header>
                     <mu-divider />
-                    <div v-for="song in playList.songList">
+                    <div v-for="(song, index) in playList.songList">
                         <div class="song-item">
                             <div class="cover">
                                 <img :src="song.album.cover | formatImageExt" />
                             </div>
-                            <mu-list-item class="content" :title="song.name">
+                            <mu-list-item class="content" 
+                                :title="song.name" 
+                                @click="playAudio(index)">
                                 <span slot="describe">
                                     <span v-for="artist in song.artists">
                                         <template>
@@ -148,12 +150,26 @@
                         var data = res.data;
                         data.cover = this.formatImageExt(data.cover);
                         this.playList = res.data;
+                        console.log(this.playList)
                     })
                     .catch(err => {
                         console.log(err);
                     });
-            }
+            },
+            playAudio(index){
+                var song = this.playList.songList[index];
+                console.log(song);
 
+                // TODO: 付费歌曲提示
+                //if(song.needPay) 
+                var listInfo = {
+                    id: this.playList.id,
+                    list: this.playList.songList,
+                    index: index
+                };
+                this.$store.commit('setListInfo', listInfo);
+                this.$store.commit('setAudioByIndex', index);
+            }
         },
         beforeRouteEnter(to, from, next) {
             next(vm => {

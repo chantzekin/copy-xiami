@@ -14,24 +14,30 @@ const store = new Vuex.Store({
             id: 0,
             title: '想自由',
             singer: '林宥嘉',
-            ablum: '美妙生活',
-            currentTime: 0,
-            durationTime: 0,
-            bufferedTime: 0,
-            tmpCurrentTime: 0,
-            change: false,
-            songUrl: 'http://om5.alicdn.com/517/23517/438628/1770182611_2283338_l.mp3?auth_key=3e2868f1122b056b74d569f363cccd5f-1488769200-0-null',
-            coverUrl: 'http://img.xiami.net/images/album/img17/23517/4386281386439629.jpg',
+            album: '美妙生活',
+            songUrl: 'https://om5.alicdn.com/517/23517/438628/1770182611_2283338_l.mp3?auth_key=3e2868f1122b056b74d569f363cccd5f-1488769200-0-null',
+            coverUrl: 'https://img.xiami.net/images/album/img17/23517/4386281386439629.jpg',
         },
-        audioLoading: false,
-        isPlaying: false, // 是否正在播放
+
+        currentTime: 0,
+        durationTime: 0,
+        bufferedTime: 0,
+        tmpCurrentTime: 0,
+        isChange: false,
+
+        isAudioLoading: false,
+        isPlaying: false,
+
         listInfo: {
+            curListId: 0,
             songList: [],
             songIndex: 0
         },
+
         player: {
             isShowPlayerDetail: false
         },
+
         homeData: {
             banner: HomeData.data.list[0].banner,
             radios: HomeData.data.list[1].radios,
@@ -41,21 +47,27 @@ const store = new Vuex.Store({
         rankData: RankData.data.common_list
     },
     getters: {
-        audio: state => state.audio,
-        homeData: state => {
-            return state.homeData;
+        audio: state => {
+            state.audio.coverUrl = state.audio.coverUrl.replace('webp', 'jpg');
+            return state.audio;
         },
+        player: state => state.player,
+        listInfo: state => state.listInfo,
+
+        currentTime: state => state.currentTime,
+        durationTime: state => state.durationTime,
+        bufferedTime: state => state.bufferedTime,
+        tmpCurrentTime: state => state.tmpCurrentTime,
+        isChange: state => state.isChange,
+        currentTimePercent: state => state.currentTime / state.durationTime * 100,
+        bufferedTimePercent: state => state.bufferedTime / state.durationTime * 100,
+
+        isPlaying: state => state.isPlaying,
+        isAudioLoading: state => state.isAudioLoading,
+
+        homeData: state => state.homeData,
         collectData: state => state.collectData,
         rankData: state => state.rankData,
-        player: state => state.player,
-        isPlaying: state => state.isPlaying,
-        currentTimePercent: state => {
-            if (state.audio.durationTime === 0) return 0;
-            return state.audio.currentTime / state.audio.durationTime * 100;
-        },
-        bufferedTimePercent: state => {
-            return state.audio.bufferedTime / state.audio.durationTime * 100;
-        }
     },
     mutations: {
         play(state) {
@@ -64,24 +76,76 @@ const store = new Vuex.Store({
         pause(state) {
             state.isPlaying = false
         },
+        updateCurrentTime(state, time) {
+            state.currentTime = time
+        },
+        updateDurationTime(state, time) {
+            state.durationTime = time
+        },
+        updateBufferedTime(state, time) {
+            state.bufferedTime = time
+        },
+        changeTime(state, time) {
+            state.tmpCurrentTime = time
+        },
+        setChange(state, isChange) {
+            state.change = isChange
+        },
+        setAudioFile(state, fileUrl) {
+            state.audio.songUrl = file;
+        },
+
+
         togglePlayerDetail: (state, flag) => {
             state.player.isShowPlayerDetail = flag;
         },
-        updateCurrentTime(state, time) {
-            state.audio.currentTime = time
+
+        setListInfo(state, {id, list, index}) {
+            if (id === state.listInfo.curListId) return;
+            else state.listInfo.curListId = id;
+            state.listInfo.songList = list.map(item => {
+                var song = {};
+                song.id = item.id;
+                song.title = item.name;
+                song.singer = item.artists.map(a => a.name).join('&');
+                song.album = item.album.name;
+                song.needPay = item.needPay;
+                song.coverUrl = item.album.cover;
+                song.songUrl = item.file;
+                return song;
+            });
+
+            state.listInfo.songIndex = index;
         },
-        updateDurationTime(state, time) {
-            state.audio.durationTime = time
+        setAudioByIndex(state, index) {
+            state.audio = state.listInfo.songList[index];
+            state.listInfo.songIndex = index;
         },
-        updateBufferedTime(state, time) {
-            state.audio.bufferedTime = time
+
+    },
+    actions: {
+        playNext({commit, state}) {
+            var index = state.listInfo.songIndex;
+
+            if (index > state.listInfo.songList.length - 1) {
+                index = 0;
+            } else {
+                index += 1;
+            }
+
+            commit('setAudioByIndex', index);
         },
-        changeTime(state, time) {
-            state.audio.tmpCurrentTime = time
-        }, 
-        setChange(state, flag) {
-            state.audio.change = flag
-        },
+        playPrev({commit, state}) {
+            var index = state.listInfo.songIndex;
+
+            if (index < 0) {
+                index = state.listInfo.songList.length - 1;
+            } else {
+                index -= 1;
+            }
+
+            commit('setAudioByIndex', index);
+        }
     }
 })
 

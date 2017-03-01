@@ -27,5 +27,6 @@ export function formatTags(v) {
 }
 
 export function formatImageExt(v) {
+    if(!v) return;
     return v.replace('webp', 'jpg');
 }

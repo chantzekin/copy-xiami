@@ -5,16 +5,16 @@
             </audio>
             <div class="player-bar__content">
                 <div class="cover" @click="showPlayerDetail">
-                    <img :src="audio.coverUrl">
+                    <img :src="audio.coverUrl | formatImageExt">
                 </div>
                 <div class="info" @click="showPlayerDetail">
                     <div class="name">{{ audio.title }}</div>
-                    <div class="artist">{{ audio.singer }} - {{ audio.ablum }}</div>
+                    <div class="artist">{{ audio.singer }} - {{ audio.album }}</div>
                 </div>
                 <div class="ctr">
-                    <mu-icon-button :icon="isPlaying? 'pause' : 'play_arrow'" iconClass="icon-lg" @click="toggleStatus()">
+                    <mu-icon-button :icon="isPlaying? 'pause' : 'play_arrow'" iconClass="icon-lg" @click="toggleStatus">
                     </mu-icon-button>
-                    <mu-icon-button icon="skip_next" iconClass="icon-lg" />
+                    <mu-icon-button icon="skip_next" iconClass="icon-lg" @click="next" />
                 </div>
                 <div class="pro">
                     <div class="pro-load proload" :style="{'-webkit-transform':'translateX(' + bufferedTimePercent +'%)' }"></div>
@@ -43,13 +43,10 @@
         computed: {
             ...mapGetters([
             'audio', 
-            'audioLoadding',
             'isPlaying', 
             'currentTimePercent',
             'bufferedTimePercent'
             ])
-        },
-        watch() {
         },
         methods: {
             showPlayerDetail() {
@@ -75,7 +72,7 @@
                 }
             },
             next() {
-
+                this.$store.dispatch('playNext');
             },
             toggleStatus() {
                 if (this.isPlaying) {

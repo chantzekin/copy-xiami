@@ -6,37 +6,36 @@
                 <mu-icon-button icon='expand_more' slot="left" @click="hidePlayerDetail" />
             </mu-appbar>
             <div class="cover">
-                <img src="//pic.xiami.net/images/album/img17/23517/4386281386439629.jpg@!c-400-400">
+                <img :src="audio.coverUrl  | formatImageExt">
             </div>
             <div class="process">
-                <mu-slider v-model="currentTimePercent"
-                     @change="changeTime" />
+                <mu-slider v-model="currentTimePercent" @change="changeTime" />
                 <div class="time">
-                    <time id="cur">{{ audio.currentTime | formatTime }}</time>
-                    <time id="total">{{ audio.durationTime | formatTime }}</time>
+                    <time id="cur">{{ currentTime | formatTime }}</time>
+                    <time id="total">{{ durationTime | formatTime }}</time>
                 </div>
             </div>
             <div class="info">
                 <mu-icon-button icon='favorite_border' slot="left" />
                 <div>
-                    <div class="name">想自由</div>
-                    <div class="singer">林宥嘉</div>
+                    <div class="name">{{ audio.title }}</div>
+                    <div class="singer">{{ audio.singer }} - {{ audio.album }}</div>
                 </div>
                 <mu-icon-button icon='chat_bubble_outline' slot="left" />
             </div>
 
             <div class="ctr">
                 <mu-icon-button icon='shuffle' slot="left" />
-                <mu-icon-button class="skip" icon='skip_previous' slot="left" />
+                <mu-icon-button class="skip" icon='skip_previous' slot="left" @click="prev" />
                 <mu-icon-button class="play-pause" @click="toggleStatus()" :icon='!isPlaying? "play_circle_outline" : "pause_circle_outline"'
                     slot="left" />
-                <mu-icon-button class="skip" icon='skip_next' slot="left" />
+                <mu-icon-button class="skip" icon='skip_next' slot="left" @click="next" />
                 <mu-icon-button icon='more_horiz' slot="left" />
             </div>
         </div>
 
         <div class="mask">
-            <div class="album-cover" style="background-image: url(//pic.xiami.net/images/album/img17/23517/4386281386439629.jpg@!c-400-400);"></div>
+            <div class="album-cover" :style="`background-image:url(${audio.coverUrl})`"></div>
             <div class="cover-mask" style="opacity:0.6;"></div>
         </div>
 
@@ -54,9 +53,11 @@
         computed: { 
             ...mapGetters([
                 'audio',
-            'player',
-            'isPlaying',
-            'currentTimePercent'
+                'player',
+                'isPlaying',
+                'currentTime',
+                'durationTime',
+                'currentTimePercent'
             ]),
             songList() {
 
@@ -79,7 +80,12 @@
                 var time = (value * this.audio.durationTime) / 100
                 this.$store.commit('changeTime', time)
                 this.$store.commit('setChange', true)
-                console.log('chang')
+            },
+            prev(){
+                this.$store.dispatch('playPrev');
+            },
+            next(){
+                this.$store.dispatch('playNext');
             }
         }
     }
