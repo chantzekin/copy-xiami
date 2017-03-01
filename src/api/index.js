@@ -1,5 +1,7 @@
-const __baseUrl = 'https://musicafe.co/api/'
-const _baseUrl = 'http://192.168.1.123:8081/api/'
+
+const _baseUrl =
+  process.env.NODE_ENV === 'production' ?
+  'http://musicapi.applinzi.com/api/' : 'http://192.168.1.123:8081/api/'
 
 export default {
   getPlaylist(id) {

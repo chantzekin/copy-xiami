@@ -1,7 +1,7 @@
 export default {
   "state": 0,
   "message": "",
-  "request_id": "0ab6004714881799446803861e",
+  "request_id": "0ab51f3a14883343226826966e",
   "data": {
     "list": [
       {
@@ -9,52 +9,44 @@ export default {
         "layout": 1,
         "banner": [
           {
-            "id": 150,
-            "logo": "http://pic.xiami.net/images/common/uploadpic/73/1488161171773.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
-            "title": "金刚狼三主题曲-旋乐",
+            "id": 162,
+            "logo": "http://pic.xiami.net/images/common/uploadpic/71/1488300221971.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
+            "title": "今日新歌主打",
             "height": 315,
             "width": 720,
-            "url": "xiami://album/2102700001"
+            "url": "xiami://open?url=https://alimusic.xiami.com/markets/xiami/songoftheday"
           },
           {
-            "id": 142,
-            "logo": "http://pic.xiami.net/images/common/uploadpic/15/1488174498315.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
-            "title": "奥斯卡",
+            "id": 159,
+            "logo": "http://pic.xiami.net/images/common/uploadpic/19/1488266418319.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
+            "title": "S.M. STATION周年纪",
             "height": 315,
             "width": 720,
-            "url": "xiami://collect/266698199"
+            "url": "xiami://open?url=https://alimusic.xiami.com/markets/xiami/smstationseason1"
           },
           {
-            "id": 147,
-            "logo": "http://pic.xiami.net/images/common/uploadpic/72/1488044576472.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
-            "title": "台湾清新电影，听见早春的味道-旋乐",
-            "height": 315,
-            "width": 720,
-            "url": "xiami://collect/266697133"
-          },
-          {
-            "id": 52,
-            "logo": "http://pic.xiami.net/images/common/uploadpic/65/1488098374965.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
-            "title": "词汇第18期－闽南语歌词",
-            "height": 315,
-            "width": 720,
-            "url": "xiami://open?url=https://alimusic.xiami.com/markets/xiami/cihui18"
-          },
-          {
-            "id": 148,
-            "logo": "http://pic.xiami.net/images/common/uploadpic/71/1488125340471.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
-            "title": "来虾米种太阳，贡献专辑资料&音频",
-            "height": 315,
-            "width": 720,
-            "url": "xiami://open?url=https://alimusic.xiami.com/markets/xiami/xiamibozhongVol1"
-          },
-          {
-            "id": 140,
-            "logo": "http://pic.xiami.net/images/common/uploadpic/46/1487928974246.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
-            "title": "太妍预购",
+            "id": 152,
+            "logo": "http://pic.xiami.net/images/common/uploadpic/5/1488181630105.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
+            "title": "太妍专辑销售",
             "height": 315,
             "width": 720,
             "url": "xiami://open?url=http://h.xiami.com/music_buy.html?id=2102696310"
+          },
+          {
+            "id": 155,
+            "logo": "http://pic.xiami.net/images/common/uploadpic/2/1488196855102.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
+            "title": "每周新歌精选",
+            "height": 315,
+            "width": 720,
+            "url": "xiami://collect/270475429"
+          },
+          {
+            "id": 158,
+            "logo": "http://pic.xiami.net/images/common/uploadpic/98/1488263329098.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
+            "title": "金刚狼VIP专属权益活动第二弹",
+            "height": 315,
+            "width": 720,
+            "url": "xiami://open?url=https://alimusic.xiami.com/markets/xiami/VIPactivity2?wh_ttid=phone"
           }
         ]
       },
@@ -66,25 +58,25 @@ export default {
             "title": "猜你喜欢",
             "sub_title": "",
             "url": "xiami://radio/guess",
-            "logo": "http://img.xiami.net/images/common/uploadpic/10/14850795104384.png"
+            "logo": "http://img.xiami.net/images/common/uploadpic/41/14850781417313.png"
           },
           {
             "title": "最新最热",
             "sub_title": "",
             "url": "xiami://radio/1174783",
-            "logo": "http://img.xiami.net/images/common/uploadpic/7/14869839076112.png"
+            "logo": "http://img.xiami.net/images/common/uploadpic/35/14869841352422.png"
           },
           {
-            "title": "午后红茶",
+            "title": "惬意上午",
             "sub_title": "",
-            "url": "xiami://radio/1167284",
-            "logo": "http://img.xiami.net/images/common/uploadpic/22/14850795227170.png"
+            "url": "xiami://radio/1167300",
+            "logo": "http://img.xiami.net/images/common/uploadpic/6/14850785067382.png"
           },
           {
             "title": "听歌识曲",
             "sub_title": "",
             "url": "xiami://soundhound",
-            "logo": "http://img.xiami.net/images/common/uploadpic/30/14850795308004.png"
+            "logo": "http://img.xiami.net/images/common/uploadpic/30/14850782306702.png"
           }
         ],
         "radio_status": true
@@ -103,47 +95,47 @@ export default {
             "is_musician": false
           },
           {
-            "name": "【钢琴与木吉他】轻音乐 FOR 工作学习 vol 01",
-            "logo": "http://pic.xiami.net/images/collect/815/15/6859815_1328160102.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "play_count": 1942433,
-            "author": "Una",
-            "url": "xiami://collect/6859815",
+            "name": "余悸",
+            "logo": "http://pic.xiami.net/images/collect/68/68/118005068_56a4f8963f12a_tYOP_1453652118.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "play_count": 65467,
+            "author": "董玲利_",
+            "url": "xiami://collect/118005068",
             "is_musician": false,
             "album_status": 0
           },
           {
-            "name": "小众女声 一耳钟情 —— 虾米音乐风格大赏之女性唱作人Female Singer-songwriter",
-            "logo": "http://pic.xiami.net/images/collect/668/68/37682668_1417083784_rMl9.png@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "play_count": 295487,
-            "author": "Yvonne C.",
-            "url": "xiami://collect/37682668",
+            "name": "一半深情，一半戏谑的粤语经典",
+            "logo": "http://pic.xiami.net/images/collect/680/80/136244680_1453355445_XtS8.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "play_count": 100955,
+            "author": "猩猩rong",
+            "url": "xiami://collect/136244680",
             "is_musician": false,
             "album_status": 0
           },
           {
-            "name": "运动！节奏感！",
-            "logo": "http://pic.xiami.net/images/collect/20/20/14131201279284926.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "play_count": 791875,
-            "author": "caplico",
-            "url": "xiami://collect/1413120",
+            "name": "TVB2016年度翡翠台电视剧主题曲【20170110更新】",
+            "logo": "http://pic.xiami.net/images/collect/384/84/137657384_1454046621_6lel.png@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "play_count": 19918,
+            "author": "neko猫",
+            "url": "xiami://collect/137657384",
             "is_musician": false,
             "album_status": 0
           },
           {
-            "name": "非常舒服的歌",
-            "logo": "http://pic.xiami.net/images/collect/160/60/8014160_1319872089.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "play_count": 7089991,
-            "author": "（ⅱ）λξ",
-            "url": "xiami://collect/8014160",
+            "name": "玛嘉烈与大卫",
+            "logo": "http://pic.xiami.net/images/collect/24/24/193534024_5773fc4fea641_Bqnm_1467219023.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "play_count": 12779,
+            "author": "youan",
+            "url": "xiami://collect/193534024",
             "is_musician": false,
             "album_status": 0
           },
           {
-            "name": "史上最强单曲循环歌曲合辑♫不可不听♥经典中经典完结篇∮＜上＞",
-            "logo": "http://pic.xiami.net/images/collect/668/68/15046668_1357089642.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "play_count": 3326774,
-            "author": "（ⅱ）λξ",
-            "url": "xiami://collect/15046668",
+            "name": "你不要失望",
+            "logo": "http://pic.xiami.net/images/collect/116/16/235880116_5800a163c7efb_QdCW_1476436323.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "play_count": 10321,
+            "author": "一切将吹散",
+            "url": "xiami://collect/235880116",
             "is_musician": false,
             "album_status": 0
           }
@@ -159,9 +151,9 @@ export default {
         "sub_title": "",
         "new_music": [
           {
-            "title": "厉害了我的宥嘉，金刚狼电影推广曲",
+            "title": "无法抗拒的声音，林宥嘉电影推广曲",
             "icon": "http://pic.xiami.net/images/common/uploadpic/56/14829058564269.png@1e_1c_0i_1o_100Q_219w_219h.jpg",
-            "logo": "http://pic.xiami.net/images/common/uploadpic/66/14881634661412.jpg@1e_1c_0i_1o_100Q_421w_421h.jpg",
+            "logo": "http://pic.xiami.net/images/common/uploadpic/10/14882504105636.jpg@1e_1c_0i_1o_100Q_421w_421h.jpg",
             "url": "xiami://hotsong"
           },
           {
@@ -171,9 +163,9 @@ export default {
             "url": "xiami://albums/new"
           },
           {
-            "title": "灿烈与郑基高，两个男人的浪漫告白",
+            "title": "TWICE新歌MV，可爱值UP UP！",
             "icon": "http://pic.xiami.net/images/common/uploadpic/26/14829059266674.png@1e_1c_0i_1o_100Q_219w_219h.jpg",
-            "logo": "http://pic.xiami.net/images/common/uploadpic/42/14881778421873.jpg@1e_1c_0i_1o_100Q_421w_421h.jpg",
+            "logo": "http://pic.xiami.net/images/common/uploadpic/7/14882530076693.jpg@1e_1c_0i_1o_100Q_421w_421h.jpg",
             "url": "xiami://mvs"
           }
         ]
@@ -183,12 +175,28 @@ export default {
         "type": "10_operation",
         "collections": [
           {
-            "url": "xiami://album/2102700115",
-            "author": "华晨宇",
-            "logo": "http://pic.xiami.net/images/album/img19/85/58b389870c6f4_4283919_1488161159.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "name": "我管你 (真我版)",
-            "album_status": 1,
+            "url": "xiami://album/2102696310",
+            "author": "太妍",
+            "logo": "http://pic.xiami.net/images/album/img68/164/58b4dc35dadcc_8237868_1488247861.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "name": "My Voice - The 1st Album",
+            "album_status": 4,
             "is_musician": false
+          },
+          {
+            "url": "xiami://album/2102700575",
+            "author": "安妮朵拉",
+            "logo": "http://pic.xiami.net/images/album/img29/41/58b3f3c613307_2055129_1488188358.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "name": "鱼说",
+            "album_status": 4,
+            "is_musician": false
+          },
+          {
+            "url": "xiami://album/2102696787",
+            "author": "张希",
+            "logo": "http://pic.xiami.net/images/album/img54/160/58ab9987d06c7_8030954_1487640967.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "name": "认真的老去",
+            "album_status": 1,
+            "is_musician": true
           },
           {
             "url": "xiami://album/2102700125",
@@ -199,10 +207,10 @@ export default {
             "is_musician": true
           },
           {
-            "url": "xiami://album/2102700024",
-            "author": "ONE OK ROCK",
-            "logo": "http://pic.xiami.net/images/album/img23/134/58b38fe6c6930_6738123_1488162790.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "name": "Skyfall",
+            "url": "xiami://album/2102700115",
+            "author": "华晨宇",
+            "logo": "http://pic.xiami.net/images/album/img19/85/58b389870c6f4_4283919_1488161159.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "name": "我管你 (真我版)",
             "album_status": 1,
             "is_musician": false
           },
@@ -211,22 +219,6 @@ export default {
             "author": "Rita黄汐源",
             "logo": "http://pic.xiami.net/images/album/img56/1/58af986f30dd3_69956_1487902831.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
             "name": "火花",
-            "album_status": 1,
-            "is_musician": true
-          },
-          {
-            "url": "xiami://album/2102671464",
-            "author": "家家",
-            "logo": "http://pic.xiami.net/images/album/img55/194/58ac66433ff9a_9741355_1487693379.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "name": "还是想念",
-            "album_status": 4,
-            "is_musician": false
-          },
-          {
-            "url": "xiami://album/2100381748",
-            "author": "刘昊霖",
-            "logo": "http://pic.xiami.net/images/album/img42/2100019242/21003817481471851753.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "name": "鱼干铺里",
             "album_status": 1,
             "is_musician": true
           }
@@ -240,30 +232,48 @@ export default {
         "type": "10_operation",
         "collections": [
           {
-            "url": "xiami://collect/266698199",
-            "author": "马余贰",
-            "logo": "http://pic.xiami.net/images/collect/199/99/266698199_1488171510_Ym6v.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "name": "聆听第89届奥斯卡",
+            "url": "xiami://collect/270736647",
+            "author": "一粒尘埃不定",
+            "logo": "http://pic.xiami.net/images/collect/647/47/270736647_1487758078_5LZj.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "name": "越过山丘，才发现无人等候~【李宗盛和他的红颜知己】",
             "album_status": 0,
-            "play_count": 33420,
+            "play_count": 85418,
             "is_musician": false
           },
           {
-            "url": "xiami://collect/269259694",
-            "author": "鹿人",
-            "logo": "http://pic.xiami.net/images/collect/694/94/269259694_58ae49367e908_UFfY_1487817014.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "name": "一首歌，一座城",
+            "url": "xiami://collect/22398256",
+            "author": "tsipproah7",
+            "logo": "http://pic.xiami.net/images/collect/256/56/22398256_1373281162.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "name": "Amazing Grace",
             "album_status": 0,
-            "play_count": 11033,
+            "play_count": 16204,
             "is_musician": false
           },
           {
-            "url": "xiami://collect/28087426",
-            "author": "시",
-            "logo": "http://pic.xiami.net/images/collect/426/26/28087426_1393566848_8nh5.jpeg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "name": "欧美＃清新#小调",
+            "url": "xiami://collect/269033640",
+            "author": "Aymee",
+            "logo": "http://pic.xiami.net/images/collect/640/40/269033640_1487763369_X9Sq.jpeg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "name": "「 好多歌想发给你听. 」",
             "album_status": 0,
-            "play_count": 15474,
+            "play_count": 34863,
+            "is_musician": false
+          },
+          {
+            "url": "xiami://collect/250886991",
+            "author": "FunkyStuff",
+            "logo": "http://pic.xiami.net/images/appv5/common/19271/58b52fd7ef1b8_l9eQ_1488269271.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "name": "莫奈花园 § Monet's Garden and Beyond",
+            "album_status": 0,
+            "play_count": 22844,
+            "is_musician": false
+          },
+          {
+            "url": "xiami://collect/270700096",
+            "author": "OnePerson1/2",
+            "logo": "http://pic.xiami.net/images/collect/96/96/270700096_58aa571b1046f_UmPN_1487558427.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "name": "那些小众易上瘾的致幻音乐·酥麻梦中飘",
+            "album_status": 0,
+            "play_count": 64522,
             "is_musician": false
           },
           {
@@ -272,25 +282,7 @@ export default {
             "logo": "http://pic.xiami.net/images/collect/473/73/263222473_58a059ed3fd51_zDkl_1486903789.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
             "name": "金牌电音，炫酷BGM，只为你喜欢而生",
             "album_status": 0,
-            "play_count": 2788,
-            "is_musician": false
-          },
-          {
-            "url": "xiami://collect/270742463",
-            "author": "独音唱片",
-            "logo": "http://pic.xiami.net/images/collect/463/63/270742463_1487838613_DYHG.png@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "name": "独音唱片六周年专场演出3月10日（说唱日）3月11日（独立日）3月12日（金属日）连躁三天",
-            "album_status": 0,
-            "play_count": 316,
-            "is_musician": false
-          },
-          {
-            "url": "xiami://collect/170812047",
-            "author": "荻原",
-            "logo": "http://pic.xiami.net/images/collect/47/47/170812047_1462601060_6D4A.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "name": "民谣，唱给自己的忧伤",
-            "album_status": 0,
-            "play_count": 101265,
+            "play_count": 33581,
             "is_musician": false
           }
         ],
@@ -329,27 +321,27 @@ export default {
             "is_musician": false
           },
           {
-            "url": "xiami://album/2102691288",
-            "author": "레미",
-            "logo": "http://pic.xiami.net/images/album/img1/108/589c851b38246_5447401_1486652699.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "name": "우주의 별이 O.S.T",
-            "album_status": 1,
-            "is_musician": false
-          },
-          {
-            "url": "xiami://album/2102663399",
-            "author": "EXO",
-            "logo": "http://pic.xiami.net/images/album/img1/79/5856a42f91029_3991301_1482073135.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "name": "For Life – Winter Special Album, 2016",
+            "url": "xiami://album/2102670829",
+            "author": "信",
+            "logo": "http://pic.xiami.net/images/album/img22/14/5864ac65ead7b_718622_1482992741.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "name": "大爷门",
             "album_status": 4,
             "is_musician": false
           },
           {
+            "url": "xiami://album/2102665470",
+            "author": "唐人街乐队",
+            "logo": "http://pic.xiami.net/images/album/img27/79/585660fb1d7e2_3987327_1482055931.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "name": "人来人往",
+            "album_status": 0,
+            "is_musician": true
+          },
+          {
             "url": "xiami://album/2102696310",
             "author": "太妍",
-            "logo": "http://pic.xiami.net/images/album/img40/127/58affd02da295_6354940_1487928578.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "name": "My Voice",
-            "album_status": 2,
+            "logo": "http://pic.xiami.net/images/album/img68/164/58b4dc35dadcc_8237868_1488247861.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "name": "My Voice - The 1st Album",
+            "album_status": 4,
             "is_musician": false
           },
           {
@@ -362,7 +354,7 @@ export default {
           }
         ],
         "title": "热门付费专辑",
-        "source_title": "手机唱片店",
+        "source_title": "热门付费专辑",
         "source_url": "http://h.xiami.com/music_store.html?playerBarMode=showPlayerBar"
       },
       {
@@ -371,17 +363,17 @@ export default {
         "source_title": "",
         "source_url": "",
         "mv": {
-          "mv_id": "K6YIOe",
-          "title": "MV - 敢 (舞蹈版)",
-          "mv_cover": "http://img.xiami.net/images/common/uploadpic/31/14881646317868.jpg",
+          "mv_id": "K6YIb6",
+          "title": "MV - Everyday",
+          "mv_cover": "http://img.xiami.net/images/common/uploadpic/83/14882536837090.jpg",
           "status": 1,
-          "play_count": 3367,
+          "play_count": 9556,
           "video": {
-            "url": "http://cloud.video.taobao.com/play/u/1748679248/p/2/e/3/t/1/51606972.m3u8",
+            "url": "http://cloud.video.taobao.com/play/u/1748679248/p/2/e/3/t/1/51623560.m3u8",
             "expire": 0
           },
-          "artist": "力量感十足的MV，让我们相遇了一个真实又勇敢的鹿晗！",
-          "url": "xiami://mv?mv_id=K6YIOe",
+          "artist": "A妹携手Future强势新歌MV大首播！",
+          "url": "xiami://mv?mv_id=K6YIb6",
           "mv_des": ""
         }
       },
@@ -393,268 +385,26 @@ export default {
         "title": "原创音乐推荐",
         "songs": [
           {
-            "song_id": 1795576240,
-            "artist_id": 2110191730,
-            "song_name": "孤独的星星",
-            "singers": "九日",
-            "album_id": 2102700199,
-            "album_logo": "http://pic.xiami.net/images/album/img30/2110191730/1691011488169102.jpg@1e_1c_0i_1o_100Q_90w_90h.jpg",
-            "album_name": "孤独的星星",
+            "song_id": 1795578199,
+            "artist_id": 1718627433,
+            "song_name": "妄为",
+            "singers": "谢春花",
+            "album_id": 2102700534,
+            "album_logo": "http://pic.xiami.net/images/album/img33/1718627433/21027005341488283422.jpg@1e_1c_0i_1o_100Q_90w_90h.jpg",
+            "album_name": "妄为",
             "flag": 65,
             "mv_id": "",
-            "pinyin": "gu du de xing xing",
-            "artist_name": "九日",
-            "url": "xiami://song/1795576240",
-            "length": 255,
-            "song_status": 1,
-            "thirdparty_url": "",
-            "need_pay_flag": 0,
-            "purview_roles": [
-              {
-                "quality": "e",
-                "filesize": 1054968,
-                "is_exist": true,
-                "operation_list": [
-                  {
-                    "purpose": 1,
-                    "upgrade_role": 0,
-                    "need_vip": false,
-                    "need_pay": false
-                  },
-                  {
-                    "purpose": 2,
-                    "upgrade_role": 0,
-                    "need_vip": false,
-                    "need_pay": false
-                  }
-                ]
-              },
-              {
-                "quality": "f",
-                "filesize": 2048291,
-                "is_exist": true,
-                "operation_list": [
-                  {
-                    "purpose": 1,
-                    "upgrade_role": 0,
-                    "need_vip": false,
-                    "need_pay": false
-                  },
-                  {
-                    "purpose": 2,
-                    "upgrade_role": 0,
-                    "need_vip": false,
-                    "need_pay": false
-                  }
-                ]
-              },
-              {
-                "quality": "l",
-                "filesize": 4094976,
-                "is_exist": true,
-                "operation_list": [
-                  {
-                    "purpose": 1,
-                    "upgrade_role": 0,
-                    "need_vip": false,
-                    "need_pay": false
-                  },
-                  {
-                    "purpose": 2,
-                    "upgrade_role": 0,
-                    "need_vip": false,
-                    "need_pay": false
-                  }
-                ]
-              },
-              {
-                "quality": "h",
-                "filesize": 10237440,
-                "is_exist": true,
-                "operation_list": [
-                  {
-                    "purpose": 1,
-                    "upgrade_role": 0,
-                    "need_vip": false,
-                    "need_pay": false
-                  },
-                  {
-                    "purpose": 2,
-                    "upgrade_role": 0,
-                    "need_vip": false,
-                    "need_pay": false
-                  }
-                ]
-              },
-              {
-                "quality": "s",
-                "filesize": 49129756,
-                "is_exist": true,
-                "operation_list": [
-                  {
-                    "purpose": 1,
-                    "upgrade_role": 3,
-                    "need_vip": true,
-                    "need_pay": false
-                  },
-                  {
-                    "purpose": 2,
-                    "upgrade_role": 3,
-                    "need_vip": true,
-                    "need_pay": false
-                  }
-                ]
-              }
-            ],
-            "pan_flag": 0,
-            "artist_logo": "",
-            "album_logo_s": "http://pic.xiami.net/images/album/img30/2110191730/1691011488169102.jpg@1e_1c_0i_1o_100Q_90w_90h.jpg",
-            "bak_song_id": 0,
-            "music_type": 0,
-            "listen_files": []
-          },
-          {
-            "song_id": 1795568847,
-            "artist_id": 2100008446,
-            "song_name": "天空之城",
-            "singers": "Doughboy;侧田",
-            "album_id": 2102698812,
-            "album_logo": "http://pic.xiami.net/images/album/img46/2100008446/21026988121487908655.jpg@1e_1c_0i_1o_100Q_90w_90h.jpg",
-            "album_name": "天空之城",
-            "flag": 65,
-            "mv_id": "K6YINC",
-            "pinyin": "tian kong zhi cheng",
-            "artist_name": "Doughboy",
-            "url": "xiami://song/1795568847",
-            "length": 259,
-            "song_status": 1,
-            "thirdparty_url": "",
-            "need_pay_flag": 0,
-            "purview_roles": [
-              {
-                "quality": "e",
-                "filesize": 1070129,
-                "is_exist": true,
-                "operation_list": [
-                  {
-                    "purpose": 1,
-                    "upgrade_role": 0,
-                    "need_vip": false,
-                    "need_pay": false
-                  },
-                  {
-                    "purpose": 2,
-                    "upgrade_role": 0,
-                    "need_vip": false,
-                    "need_pay": false
-                  }
-                ]
-              },
-              {
-                "quality": "f",
-                "filesize": 2102566,
-                "is_exist": true,
-                "operation_list": [
-                  {
-                    "purpose": 1,
-                    "upgrade_role": 0,
-                    "need_vip": false,
-                    "need_pay": false
-                  },
-                  {
-                    "purpose": 2,
-                    "upgrade_role": 0,
-                    "need_vip": false,
-                    "need_pay": false
-                  }
-                ]
-              },
-              {
-                "quality": "l",
-                "filesize": 4156185,
-                "is_exist": true,
-                "operation_list": [
-                  {
-                    "purpose": 1,
-                    "upgrade_role": 0,
-                    "need_vip": false,
-                    "need_pay": false
-                  },
-                  {
-                    "purpose": 2,
-                    "upgrade_role": 0,
-                    "need_vip": false,
-                    "need_pay": false
-                  }
-                ]
-              },
-              {
-                "quality": "h",
-                "filesize": 10390464,
-                "is_exist": true,
-                "operation_list": [
-                  {
-                    "purpose": 1,
-                    "upgrade_role": 0,
-                    "need_vip": false,
-                    "need_pay": false
-                  },
-                  {
-                    "purpose": 2,
-                    "upgrade_role": 0,
-                    "need_vip": false,
-                    "need_pay": false
-                  }
-                ]
-              },
-              {
-                "quality": "s",
-                "filesize": 45809020,
-                "is_exist": true,
-                "operation_list": [
-                  {
-                    "purpose": 1,
-                    "upgrade_role": 3,
-                    "need_vip": true,
-                    "need_pay": false
-                  },
-                  {
-                    "purpose": 2,
-                    "upgrade_role": 3,
-                    "need_vip": true,
-                    "need_pay": false
-                  }
-                ]
-              }
-            ],
-            "pan_flag": 0,
-            "artist_logo": "",
-            "album_logo_s": "http://pic.xiami.net/images/album/img46/2100008446/21026988121487908655.jpg@1e_1c_0i_1o_100Q_90w_90h.jpg",
-            "bak_song_id": 0,
-            "music_type": 0,
-            "listen_files": []
-          },
-          {
-            "song_id": 1795559872,
-            "artist_id": 106166809,
-            "song_name": "戏台",
-            "singers": "陈粒",
-            "album_id": 2102697204,
-            "album_logo": "http://pic.xiami.net/images/album/img63/13/58ac0cbe09147_672063_1487670462.jpg@1e_1c_0i_1o_100Q_90w_90h.jpg",
-            "album_name": "戏台",
-            "flag": 65,
-            "mv_id": "",
-            "pinyin": "xi tai",
-            "artist_name": "陈粒",
-            "url": "xiami://song/1795559872",
-            "length": 224,
+            "pinyin": "wang wei",
+            "artist_name": "谢春花",
+            "url": "xiami://song/1795578199",
+            "length": 209,
             "song_status": 1,
             "thirdparty_url": "",
             "need_pay_flag": 2,
             "purview_roles": [
               {
                 "quality": "e",
-                "filesize": 928713,
+                "filesize": 861426,
                 "is_exist": true,
                 "operation_list": [
                   {
@@ -673,7 +423,7 @@ export default {
               },
               {
                 "quality": "f",
-                "filesize": 1826941,
+                "filesize": 1688029,
                 "is_exist": true,
                 "operation_list": [
                   {
@@ -692,65 +442,307 @@ export default {
               },
               {
                 "quality": "l",
-                "filesize": 3592776,
+                "filesize": 3352320,
                 "is_exist": true,
                 "operation_list": [
                   {
                     "purpose": 1,
                     "upgrade_role": 0,
-                    "need_vip": true,
+                    "need_vip": false,
                     "need_pay": false
                   },
                   {
                     "purpose": 2,
                     "upgrade_role": 4,
-                    "need_vip": true,
+                    "need_vip": false,
                     "need_pay": true
                   }
                 ]
               },
               {
                 "quality": "h",
-                "filesize": 8981942,
+                "filesize": 8380800,
                 "is_exist": true,
                 "operation_list": [
                   {
                     "purpose": 1,
-                    "upgrade_role": 4,
-                    "need_vip": true,
-                    "need_pay": true
+                    "upgrade_role": 0,
+                    "need_vip": false,
+                    "need_pay": false
                   },
                   {
                     "purpose": 2,
                     "upgrade_role": 4,
-                    "need_vip": true,
+                    "need_vip": false,
                     "need_pay": true
                   }
                 ]
               },
               {
                 "quality": "s",
-                "filesize": 39914846,
+                "filesize": 60327472,
                 "is_exist": true,
                 "operation_list": [
                   {
                     "purpose": 1,
-                    "upgrade_role": 4,
-                    "need_vip": true,
-                    "need_pay": true
+                    "upgrade_role": 1,
+                    "need_vip": false,
+                    "need_pay": false
                   },
                   {
                     "purpose": 2,
-                    "upgrade_role": 4,
-                    "need_vip": true,
-                    "need_pay": true
+                    "upgrade_role": 1,
+                    "need_vip": false,
+                    "need_pay": false
                   }
                 ]
               }
             ],
             "pan_flag": 0,
             "artist_logo": "",
-            "album_logo_s": "http://pic.xiami.net/images/album/img63/13/58ac0cbe09147_672063_1487670462.jpg@1e_1c_0i_1o_100Q_90w_90h.jpg",
+            "album_logo_s": "http://pic.xiami.net/images/album/img33/1718627433/21027005341488283422.jpg@1e_1c_0i_1o_100Q_90w_90h.jpg",
+            "bak_song_id": 0,
+            "music_type": 0,
+            "listen_files": []
+          },
+          {
+            "song_id": 1795548439,
+            "artist_id": 85182,
+            "song_name": "凡人对抗命运",
+            "singers": "铁树兰",
+            "album_id": 2102695131,
+            "album_logo": "http://pic.xiami.net/images/album/img42/23/58b403c76064a_1176042_1488192455.jpg@1e_1c_0i_1o_100Q_90w_90h.jpg",
+            "album_name": "自白",
+            "flag": 65,
+            "mv_id": "",
+            "pinyin": "fan ren dui kang ming yun",
+            "artist_name": "铁树兰",
+            "url": "xiami://song/1795548439",
+            "length": 292,
+            "song_status": 1,
+            "thirdparty_url": "",
+            "need_pay_flag": 0,
+            "purview_roles": [
+              {
+                "quality": "e",
+                "filesize": 1201713,
+                "is_exist": true,
+                "operation_list": [
+                  {
+                    "purpose": 1,
+                    "upgrade_role": 0,
+                    "need_vip": false,
+                    "need_pay": false
+                  },
+                  {
+                    "purpose": 2,
+                    "upgrade_role": 0,
+                    "need_vip": false,
+                    "need_pay": false
+                  }
+                ]
+              },
+              {
+                "quality": "f",
+                "filesize": 2369561,
+                "is_exist": true,
+                "operation_list": [
+                  {
+                    "purpose": 1,
+                    "upgrade_role": 0,
+                    "need_vip": false,
+                    "need_pay": false
+                  },
+                  {
+                    "purpose": 2,
+                    "upgrade_role": 0,
+                    "need_vip": false,
+                    "need_pay": false
+                  }
+                ]
+              },
+              {
+                "quality": "l",
+                "filesize": 4676544,
+                "is_exist": true,
+                "operation_list": [
+                  {
+                    "purpose": 1,
+                    "upgrade_role": 0,
+                    "need_vip": false,
+                    "need_pay": false
+                  },
+                  {
+                    "purpose": 2,
+                    "upgrade_role": 0,
+                    "need_vip": false,
+                    "need_pay": false
+                  }
+                ]
+              },
+              {
+                "quality": "h",
+                "filesize": 11691362,
+                "is_exist": true,
+                "operation_list": [
+                  {
+                    "purpose": 1,
+                    "upgrade_role": 0,
+                    "need_vip": false,
+                    "need_pay": false
+                  },
+                  {
+                    "purpose": 2,
+                    "upgrade_role": 0,
+                    "need_vip": false,
+                    "need_pay": false
+                  }
+                ]
+              },
+              {
+                "quality": "s",
+                "filesize": 51548828,
+                "is_exist": true,
+                "operation_list": [
+                  {
+                    "purpose": 1,
+                    "upgrade_role": 3,
+                    "need_vip": true,
+                    "need_pay": false
+                  },
+                  {
+                    "purpose": 2,
+                    "upgrade_role": 3,
+                    "need_vip": true,
+                    "need_pay": false
+                  }
+                ]
+              }
+            ],
+            "pan_flag": 0,
+            "artist_logo": "",
+            "album_logo_s": "http://pic.xiami.net/images/album/img42/23/58b403c76064a_1176042_1488192455.jpg@1e_1c_0i_1o_100Q_90w_90h.jpg",
+            "bak_song_id": 0,
+            "music_type": 0,
+            "listen_files": []
+          },
+          {
+            "song_id": 1795578358,
+            "artist_id": 68239,
+            "song_name": "鱼说",
+            "singers": "安妮朵拉",
+            "album_id": 2102700575,
+            "album_logo": "http://pic.xiami.net/images/album/img29/41/58b3f3c613307_2055129_1488188358.jpg@1e_1c_0i_1o_100Q_90w_90h.jpg",
+            "album_name": "鱼说",
+            "flag": 65,
+            "mv_id": "",
+            "pinyin": "yu shuo",
+            "artist_name": "安妮朵拉",
+            "url": "xiami://song/1795578358",
+            "length": 275,
+            "song_status": 1,
+            "thirdparty_url": "",
+            "need_pay_flag": 0,
+            "purview_roles": [
+              {
+                "quality": "e",
+                "filesize": 1135506,
+                "is_exist": true,
+                "operation_list": [
+                  {
+                    "purpose": 1,
+                    "upgrade_role": 0,
+                    "need_vip": false,
+                    "need_pay": false
+                  },
+                  {
+                    "purpose": 2,
+                    "upgrade_role": 0,
+                    "need_vip": false,
+                    "need_pay": false
+                  }
+                ]
+              },
+              {
+                "quality": "f",
+                "filesize": 2239436,
+                "is_exist": true,
+                "operation_list": [
+                  {
+                    "purpose": 1,
+                    "upgrade_role": 0,
+                    "need_vip": false,
+                    "need_pay": false
+                  },
+                  {
+                    "purpose": 2,
+                    "upgrade_role": 0,
+                    "need_vip": false,
+                    "need_pay": false
+                  }
+                ]
+              },
+              {
+                "quality": "l",
+                "filesize": 4411140,
+                "is_exist": true,
+                "operation_list": [
+                  {
+                    "purpose": 1,
+                    "upgrade_role": 0,
+                    "need_vip": false,
+                    "need_pay": false
+                  },
+                  {
+                    "purpose": 2,
+                    "upgrade_role": 0,
+                    "need_vip": false,
+                    "need_pay": false
+                  }
+                ]
+              },
+              {
+                "quality": "h",
+                "filesize": 11027852,
+                "is_exist": true,
+                "operation_list": [
+                  {
+                    "purpose": 1,
+                    "upgrade_role": 0,
+                    "need_vip": false,
+                    "need_pay": false
+                  },
+                  {
+                    "purpose": 2,
+                    "upgrade_role": 0,
+                    "need_vip": false,
+                    "need_pay": false
+                  }
+                ]
+              },
+              {
+                "quality": "s",
+                "filesize": 48621556,
+                "is_exist": true,
+                "operation_list": [
+                  {
+                    "purpose": 1,
+                    "upgrade_role": 3,
+                    "need_vip": true,
+                    "need_pay": false
+                  },
+                  {
+                    "purpose": 2,
+                    "upgrade_role": 3,
+                    "need_vip": true,
+                    "need_pay": false
+                  }
+                ]
+              }
+            ],
+            "pan_flag": 0,
+            "artist_logo": "",
+            "album_logo_s": "http://pic.xiami.net/images/album/img29/41/58b3f3c613307_2055129_1488188358.jpg@1e_1c_0i_1o_100Q_90w_90h.jpg",
             "bak_song_id": 0,
             "music_type": 0,
             "listen_files": []
@@ -810,8 +802,8 @@ export default {
             "is_musician": false
           }
         ],
-        "title": "VIP会员曲库",
-        "source_title": "VIP会员曲库",
+        "title": "VIP专享免费曲库",
+        "source_title": "VIP专享免费曲库",
         "source_url": "xiami://packageapppage?urlString=https://h5.m.taobao.com/app/xmvip/vip-lib.js?wh_weex=true&hide_playerbar=true"
       },
       {
@@ -825,8 +817,8 @@ export default {
             "url": "https://alimusic.xiami.com/markets/xiami/globalmusicmapvol13"
           },
           {
-            "logo": "http://img.xiami.net/images/common/uploadpic/28/14871262282747.jpg",
-            "url": "https://alimusic.xiami.com/markets/xiami/collection201702"
+            "logo": "http://img.xiami.net/images/common/uploadpic/59/14881810598307.jpg",
+            "url": "https://alimusic.xiami.com/markets/xiami/whattolisten05"
           },
           {
             "logo": "http://img.xiami.net/images/common/uploadpic/58/14850717582103.jpg",
@@ -837,5 +829,5 @@ export default {
     ],
     "more": false
   },
-  "data-version": "ae0284bb567608dad91c6a095a34d672"
+  "data-version": "431330ed5cb9f404a40691b2b6a1f459"
 }
