@@ -63,16 +63,16 @@
                         <div class="song-item">
                             <div class="cover">
                                 <img :src="song.album.cover | formatImageExt" />
-                                </div>
+                            </div>
                             <mu-list-item class="content" :title="song.name">
                                 <span slot="describe">
-                                <span v-for="artist in song.artists">
-                                    <template>
-                                        {{ artist.name + ' '}} 
-                                    </template>
+                                    <span v-for="artist in song.artists">
+                                        <template>
+                                            {{ artist.name + ' '}} 
+                                        </template>
+                                    </span>
                                 </span>
-                                </span>
-                                <mu-icon-button slot="right" icon="more_horiz">                                    
+                                <mu-icon-button slot="right" icon="more_horiz">
                                 </mu-icon-button>
                             </mu-list-item>
                         </div>
@@ -98,13 +98,18 @@
                     backgroundColor: 'rgba(255,255,255, 0)'
                 },
                 playList: {
-                    name: '精选集名',
+                    id: 0,
+                    name: '名称',
                     author: {
-                        name: '作者名'
+                        name: '作者'
                     },
+                    cover: '../../static/cover.jpg',
+                    tags: ['标签'],
                     comments: 0,
                     collects: 0,
-                    songList: []
+                    songList: [
+                        { name: '歌曲名', artists: [{ name: '艺人' }], album: { cover: '../../static/cover.jpg' } }
+                    ]
                 },
                 error: []
             }
@@ -150,14 +155,18 @@
             }
 
         },
-        created() {
-            // 组件创建完后获取数据，
-            // 此时 data 已经被 observed 了
-            this.get()
-        },
-        watch: {
-            // 如果路由有变化，会再次执行该方法
-            //'$route': 'get'
+        beforeRouteEnter(to, from, next) {
+            next(vm => {
+                var playList = vm.playList;
+                // 加载页面时预先显示的数据，替换缓存
+                playList.id = vm.$route.id;
+                playList.name = vm.$route.params.name;
+                playList.cover = vm.$route.params.cover || '../../static/cover.jpg';
+                playList.collects = vm.$route.params.play_count;
+                playList.author.name = vm.$route.params.author;
+                playList.songList = [{ name: '歌曲名', artists: [{ name: '艺人' }], album: { cover: '../../static/cover.jpg' } }]
+                vm.get();
+            })
         },
         mounted() {
             this.$nextTick(function () {
@@ -192,8 +201,8 @@
         display: flex;
         flex-direction: column;
     }
-
-    .play-list__hd{
+    
+    .play-list__hd {
         flex: 0 0 auto;
     }
     
@@ -294,11 +303,12 @@
             }
         }
         .ctr {
+            height: 24px;
+            margin-top: 20px;
             display: flex;
         }
         .ctr-item {
             flex: 1;
-            margin-top: 20px;
             color: #fff;
             display: flex;
             align-items: center;
@@ -314,6 +324,7 @@
         flex-direction: row;
         justify-content: space-between;
         padding-right: 16px;
+        height: 48px;
         .left,
         .right {
             display: flex;
@@ -342,7 +353,7 @@
         }
         .content {
             flex: 1;
-            .mu-item-right{
+            .mu-item-right {
                 padding-top: 8px;
             }
         }
