@@ -1,7 +1,12 @@
 <template>
     <div class="foot">
         <mu-bottom-nav class="player-bar">
-            <audio :src="audio.songUrl" id="AudioPlay" @timeupdate="change()" @ended="next()" @error="next()">
+            <audio :src="audio.songUrl" 
+                id="AudioPlay" 
+                @timeupdate="change" 
+                @ended="next" 
+                @error="next"
+                @canplay="canPlay">
             </audio>
             <div class="player-bar__content">
                 <div class="cover" @click="showPlayerDetail">
@@ -45,7 +50,10 @@
             'audio', 
             'isPlaying', 
             'currentTimePercent',
-            'bufferedTimePercent'
+            'bufferedTimePercent', 
+            'currentTime',
+            'tmpCurrentTime',
+            'isChange'
             ])
         },
         methods: {
@@ -55,7 +63,7 @@
             change() {
                 var vm = this;
                 var audioEl = document.getElementById('AudioPlay');
-                var curTime = parseInt(audioEl.currentTime);
+                var curTime = audioEl.currentTime;
                 // 防止在未加载完成时，切歌出现的错误
                 audioEl.onsuspend = function () {
                     var timeRange = audioEl.buffered
@@ -63,17 +71,14 @@
                         vm.$store.commit('updateBufferedTime', parseInt(audioEl.buffered.end(0)))
                     }
                 }
-                vm.$store.commit('updateDurationTime', parseInt(audioEl.duration));
-                if (this.audio.change) {
-                    audioEl.currentTime = this.audio.tmpCurrentTime
+                vm.$store.commit('updateDurationTime', audioEl.duration);
+                if (this.isChange) {
+                    audioEl.currentTime = this.tmpCurrentTime;
                     this.$store.commit('setChange', false)
                 } else {
-                    this.$store.commit('updateCurrentTime', curTime)
+                   this.$store.commit('updateCurrentTime', curTime)
                 }
-            },
-            next() {
-                this.$store.dispatch('playNext');
-            },
+            },            
             toggleStatus() {
                 if (this.isPlaying) {
                     document.getElementById('AudioPlay').pause()
@@ -82,6 +87,14 @@
                     document.getElementById('AudioPlay').play()
                     this.$store.commit('play')
                 }
+            },
+            next() {
+                this.toggleStatus();
+                this.$store.dispatch('playNext');
+            },
+            canPlay(){
+                this.$store.commit('play');
+                document.getElementById('AudioPlay').play()
             }
         }
     }

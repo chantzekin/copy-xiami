@@ -110,7 +110,7 @@
                     comments: 0,
                     collects: 0,
                     songList: [
-                        { name: '歌曲名', artists: [{ name: '艺人' }], album: { cover: '../../static/cover.jpg' } }
+                        { name: '歌曲名', artists: [{ name: '艺人' }], album: { cover: '../static/cover.jpg' } }
                     ]
                 },
                 error: []
@@ -157,7 +157,7 @@
             },
             playAudio(index){
                 var song = this.playList.songList[index];
-                console.log(song);
+                //console.log(song);
 
                 // TODO: 付费歌曲提示
                 //if(song.needPay) 
@@ -176,10 +176,10 @@
                 // 加载页面时预先显示的数据，替换缓存
                 playList.id = vm.$route.id;
                 playList.name = vm.$route.params.name;
-                playList.cover = vm.$route.params.cover || '../../static/cover.jpg';
+                playList.cover = vm.$route.params.cover || '../static/cover.jpg';
                 playList.collects = vm.$route.params.playCount;
                 playList.author.name = vm.$route.params.author;
-                playList.songList = [{ name: '歌曲名', artists: [{ name: '艺人' }], album: { cover: '../../static/cover.jpg' } }]
+                playList.songList = [{ name: '歌曲名', artists: [{ name: '艺人' }], album: { cover: '../static/cover.jpg' } }]
                 vm.get();
             })
         },

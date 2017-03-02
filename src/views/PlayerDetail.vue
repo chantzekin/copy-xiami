@@ -85,6 +85,7 @@
                 this.$store.dispatch('playPrev');
             },
             next(){
+                this.toggleStatus();
                 this.$store.dispatch('playNext');
             }
         }
