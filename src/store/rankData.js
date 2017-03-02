@@ -1,7 +1,7 @@
 export default {
     "state": 0,
     "message": "",
-    "request_id": "0ab6004614881643207607388e",
+    "request_id": "0ab51f3a14884257398536286e",
     "data": {
         "common_list": [
             {
@@ -9,8 +9,8 @@ export default {
                 "items": [
                     {
                         "title": "新歌榜",
-                        "logo": "http://img.xiami.net/images/appv5/rank_list/ranking_list_newmusic_all.png",
-                        "logo_middle": "http://img.xiami.net/images/appv5/rank_list/ranking_list_newmusic_all.png",
+                        "logo": "https://img.xiami.net/images/appv5/rank_list/ranking_list_newmusic_all.png",
+                        "logo_middle": "https://img.xiami.net/images/appv5/rank_list/ranking_list_newmusic_all.png",
                         "update_date": "每天更新",
                         "type": "newmusic_all",
                         "show_type": 0,
@@ -22,26 +22,26 @@ export default {
                                 "singers": "赵雷"
                             },
                             {
-                                "song_name": "脱胎换骨",
-                                "song_id": 1795540323,
-                                "singers": "谭咏麟;五月天"
+                                "song_name": "Fine",
+                                "song_id": 1795554950,
+                                "singers": "太妍"
                             },
                             {
-                                "song_name": "Rookie",
-                                "song_id": 1795502169,
-                                "singers": "Red Velvet"
+                                "song_name": "Cover Up",
+                                "song_id": 1795557418,
+                                "singers": "太妍"
                             },
                             {
-                                "song_name": "无法长大",
-                                "song_id": 1792724108,
-                                "singers": "赵雷"
+                                "song_name": "I Got Love",
+                                "song_id": 1795554953,
+                                "singers": "太妍"
                             }
                         ]
                     },
                     {
                         "title": "热歌榜",
-                        "logo": "http://img.xiami.net/images/appv5/rank_list/ranking_list_music_all.png",
-                        "logo_middle": "http://img.xiami.net/images/appv5/rank_list/ranking_list_music_all.png",
+                        "logo": "https://img.xiami.net/images/appv5/rank_list/ranking_list_music_all.png",
+                        "logo_middle": "https://img.xiami.net/images/appv5/rank_list/ranking_list_music_all.png",
                         "update_date": "每天更新",
                         "type": "music_all",
                         "show_type": 0,
@@ -63,16 +63,16 @@ export default {
                                 "singers": "李玉刚"
                             },
                             {
-                                "song_name": "你曾是少年",
-                                "song_id": 1774321215,
-                                "singers": "S.H.E"
+                                "song_name": "Fine",
+                                "song_id": 1795554950,
+                                "singers": "太妍"
                             }
                         ]
                     },
                     {
                         "title": "原创榜",
-                        "logo": "http://img.xiami.net/images/appv5/rank_list/ranking_list_music_original.png",
-                        "logo_middle": "http://img.xiami.net/images/appv5/rank_list/ranking_list_music_original.png",
+                        "logo": "https://img.xiami.net/images/appv5/rank_list/ranking_list_music_original.png",
+                        "logo_middle": "https://img.xiami.net/images/appv5/rank_list/ranking_list_music_original.png",
                         "update_date": "每天更新",
                         "type": "music_original",
                         "show_type": 0,
@@ -107,8 +107,8 @@ export default {
                 "items": [
                     {
                         "title": "美国Billboard单曲榜",
-                        "logo": "http://img.xiami.net/images/appv5/rank_list/ranking_list_billboard.png",
-                        "logo_middle": "http://img.xiami.net/images/appv5/rank_list/ranking_list_billboard.png",
+                        "logo": "https://img.xiami.net/images/appv5/rank_list/ranking_list_billboard.png",
+                        "logo_middle": "https://img.xiami.net/images/appv5/rank_list/ranking_list_billboard.png",
                         "update_date": "每周五更新",
                         "type": "billboard",
                         "show_type": 0,
@@ -138,17 +138,17 @@ export default {
                     },
                     {
                         "title": "Hito 中文排行榜",
-                        "logo": "http://img.xiami.net/images/appv5/rank_list/ranking_list_hito.png",
-                        "logo_middle": "http://img.xiami.net/images/appv5/rank_list/ranking_list_hito.png",
+                        "logo": "https://img.xiami.net/images/appv5/rank_list/ranking_list_hito.png",
+                        "logo_middle": "https://img.xiami.net/images/appv5/rank_list/ranking_list_hito.png",
                         "update_date": "每周一更新",
                         "type": "hito",
                         "show_type": 0,
                         "cycle_type": "weekly",
                         "songs": [
                             {
-                                "song_name": "失声",
-                                "song_id": 1795336857,
-                                "singers": "吴克群"
+                                "song_name": "裸体早餐",
+                                "song_id": 1795528843,
+                                "singers": "郑秀文"
                             },
                             {
                                 "song_name": "任意门",
@@ -161,26 +161,21 @@ export default {
                                 "singers": "葛仲珊"
                             },
                             {
-                                "song_name": "18",
-                                "song_id": 1795472007,
-                                "singers": "李玟"
+                                "song_name": "失声",
+                                "song_id": 1795336857,
+                                "singers": "吴克群"
                             }
                         ]
                     },
                     {
                         "title": "劲歌金榜",
-                        "logo": "http://img.xiami.net/images/appv5/rank_list/ranking_list_jingge.png",
-                        "logo_middle": "http://img.xiami.net/images/appv5/rank_list/ranking_list_jingge.png",
+                        "logo": "https://img.xiami.net/images/appv5/rank_list/ranking_list_jingge.png",
+                        "logo_middle": "https://img.xiami.net/images/appv5/rank_list/ranking_list_jingge.png",
                         "update_date": "每周一更新",
                         "type": "jingge",
                         "show_type": 0,
                         "cycle_type": "weekly",
                         "songs": [
-                            {
-                                "song_name": "愿望树",
-                                "song_id": 1795425895,
-                                "singers": "胡琳"
-                            },
                             {
                                 "song_name": "在这家",
                                 "song_id": 1792596144,
@@ -192,16 +187,21 @@ export default {
                                 "singers": "钟舒漫"
                             },
                             {
-                                "song_name": "幸福止痛",
-                                "song_id": 1795351399,
-                                "singers": "侧田"
+                                "song_name": "演员",
+                                "song_id": 1795303134,
+                                "singers": "吴业坤"
+                            },
+                            {
+                                "song_name": "难得一遇",
+                                "song_id": 1795462501,
+                                "singers": "林奕匡"
                             }
                         ]
                     },
                     {
                         "title": "英国UK单曲榜",
-                        "logo": "http://img.xiami.net/images/appv5/rank_list/ranking_list_uk.png",
-                        "logo_middle": "http://img.xiami.net/images/appv5/rank_list/ranking_list_uk.png",
+                        "logo": "https://img.xiami.net/images/appv5/rank_list/ranking_list_uk.png",
+                        "logo_middle": "https://img.xiami.net/images/appv5/rank_list/ranking_list_uk.png",
                         "update_date": "每周一更新",
                         "type": "uk",
                         "show_type": 0,
@@ -213,6 +213,11 @@ export default {
                                 "singers": "Ed Sheeran"
                             },
                             {
+                                "song_name": "How Would You Feel (Paean)",
+                                "song_id": 1795547048,
+                                "singers": "Ed Sheeran"
+                            },
+                            {
                                 "song_name": "Human",
                                 "song_id": 1776390855,
                                 "singers": "Rag'N'Bone Man"
@@ -221,73 +226,68 @@ export default {
                                 "song_name": "Castle on the Hill",
                                 "song_id": 1795444371,
                                 "singers": "Ed Sheeran"
-                            },
-                            {
-                                "song_name": "You Don't Know Me",
-                                "song_id": 1795327058,
-                                "singers": "Raye;Jax Jones"
                             }
                         ]
                     },
                     {
                         "title": "oricon公信单曲榜",
-                        "logo": "http://img.xiami.net/images/appv5/rank_list/ranking_list_oricon.png",
-                        "logo_middle": "http://img.xiami.net/images/appv5/rank_list/ranking_list_oricon.png",
+                        "logo": "https://img.xiami.net/images/appv5/rank_list/ranking_list_oricon.png",
+                        "logo_middle": "https://img.xiami.net/images/appv5/rank_list/ranking_list_oricon.png",
                         "update_date": "每周三更新",
                         "type": "oricon",
                         "show_type": 0,
                         "cycle_type": "weekly",
                         "songs": [
                             {
-                                "song_name": "バグっていいじゃん",
-                                "song_id": 1795510766,
-                                "singers": "HKT48"
+                                "song_name": "OVER THE TOP",
+                                "song_id": 1795564328,
+                                "singers": "Hey! Say! JUMP"
                             },
                             {
-                                "song_name": "TOKYO GIRL",
-                                "song_id": 1795471793,
-                                "singers": "Perfume"
+                                "song_name": "流動体について",
+                                "song_id": 1795559480,
+                                "singers": "小沢健二"
                             },
                             {
-                                "song_name": "orion",
-                                "song_id": 1795446622,
-                                "singers": "米津玄師"
+                                "song_name": "初恋サンライズ",
+                                "song_id": 1795516890,
+                                "singers": "つばきファクトリー"
                             },
                             {
-                                "song_name": "Catch the Moment",
-                                "song_id": 1795461566,
-                                "singers": "LiSA"
+                                "song_name": "SUPER FLY",
+                                "song_id": 1795511033,
+                                "singers": "EXILE THE SECOND"
                             }
                         ]
                     },
                     {
                         "title": "韩国MNET音乐排行榜",
-                        "logo": "http://img.xiami.net/images/appv5/rank_list/ranking_list_mnet.png",
-                        "logo_middle": "http://img.xiami.net/images/appv5/rank_list/ranking_list_mnet.png",
+                        "logo": "https://img.xiami.net/images/appv5/rank_list/ranking_list_mnet.png",
+                        "logo_middle": "https://img.xiami.net/images/appv5/rank_list/ranking_list_mnet.png",
                         "update_date": "每周一更新",
                         "type": "mnet",
                         "show_type": 0,
                         "cycle_type": "weekly",
                         "songs": [
                             {
-                                "song_name": "비가와 (Rain)",
-                                "song_id": 1795539032,
-                                "singers": "소유;백현"
+                                "song_name": "KNOCK KNOCK",
+                                "song_id": 1795553890,
+                                "singers": "TWICE"
                             },
                             {
-                                "song_name": "Cold",
-                                "song_id": 1795526167,
-                                "singers": "Maroon 5;Future"
+                                "song_name": "첫눈처럼 너에게 가겠다",
+                                "song_id": 1795449459,
+                                "singers": "Ailee"
                             },
                             {
-                                "song_name": "반창고",
-                                "song_id": 1795544407,
-                                "singers": "MC 몽;허각"
+                                "song_name": "Rookie",
+                                "song_id": 1795502169,
+                                "singers": "Red Velvet"
                             },
                             {
-                                "song_name": "봄날",
-                                "song_id": 1795536190,
-                                "singers": "방탄소년단"
+                                "song_name": "YESTERDAY",
+                                "song_id": 1795515430,
+                                "singers": "Block B"
                             }
                         ]
                     }
@@ -298,7 +298,7 @@ export default {
                 "items": [
                     {
                         "title": "阿里音乐实时榜",
-                        "logo": "http://img.xiami.net/img/rank/top05.jpg",
+                        "logo": "https://img.xiami.net/img/rank/top05.jpg",
                         "logo_middle": "",
                         "update_date": "",
                         "type": "alimusic_realtime_billboard",
@@ -314,26 +314,26 @@ export default {
                                 "singers": "张晓钰"
                             },
                             {
-                                "song_name": "不会怕",
-                                "song_id": 1795436408,
-                                "singers": "张晓钰"
+                                "song_name": "Fine",
+                                "song_id": 1795554950,
+                                "singers": "太妍"
                             },
                             {
-                                "song_name": "拍手",
-                                "song_id": 1795436407,
-                                "singers": "张晓钰"
+                                "song_name": "Cover Up",
+                                "song_id": 1795557418,
+                                "singers": "太妍"
                             },
                             {
-                                "song_name": "Cool Girl",
-                                "song_id": 1795436409,
-                                "singers": "张晓钰"
+                                "song_name": "Fire",
+                                "song_id": 1795557427,
+                                "singers": "太妍"
                             }
                         ]
                     },
                     {
                         "title": "阿里音乐周榜",
-                        "logo": "http://img.xiami.net/images/appv5/rank_list/ranking_list_alimusic_week_billboard.png",
-                        "logo_middle": "http://img.xiami.net/images/appv5/rank_list/ranking_list_alimusic_week_billboard.png",
+                        "logo": "https://img.xiami.net/images/appv5/rank_list/ranking_list_alimusic_week_billboard.png",
+                        "logo_middle": "https://img.xiami.net/images/appv5/rank_list/ranking_list_alimusic_week_billboard.png",
                         "update_date": "每周更新",
                         "type": "alimusic_week_billboard",
                         "show_type": 0,
@@ -363,8 +363,8 @@ export default {
                     },
                     {
                         "title": "阿里音乐年度总榜",
-                        "logo": "http://img.xiami.net/images/appv5/rank_list/ranking_list_alimusic_year_billboard.png",
-                        "logo_middle": "http://img.xiami.net/images/appv5/rank_list/ranking_list_alimusic_year_billboard.png",
+                        "logo": "https://img.xiami.net/images/appv5/rank_list/ranking_list_alimusic_year_billboard.png",
+                        "logo_middle": "https://img.xiami.net/images/appv5/rank_list/ranking_list_alimusic_year_billboard.png",
                         "update_date": "每天更新",
                         "type": "alimusic_year_billboard",
                         "show_type": 0,
@@ -394,8 +394,8 @@ export default {
                     },
                     {
                         "title": "大虾试听榜",
-                        "logo": "http://img.xiami.net/images/appv5/rank_list/ranking_list_xiami_daxia.png",
-                        "logo_middle": "http://img.xiami.net/images/appv5/rank_list/ranking_list_xiami_daxia.png",
+                        "logo": "https://img.xiami.net/images/appv5/rank_list/ranking_list_xiami_daxia.png",
+                        "logo_middle": "https://img.xiami.net/images/appv5/rank_list/ranking_list_xiami_daxia.png",
                         "update_date": "每天更新",
                         "type": "xiami_daxia",
                         "show_type": 0,
@@ -412,9 +412,9 @@ export default {
                                 "singers": "田馥甄"
                             },
                             {
-                                "song_name": "逆流成河",
-                                "song_id": 1772409519,
-                                "singers": "金南玲"
+                                "song_name": "脱胎换骨",
+                                "song_id": 1795540323,
+                                "singers": "谭咏麟;五月天"
                             },
                             {
                                 "song_name": "突然好想你",
@@ -425,39 +425,39 @@ export default {
                     },
                     {
                         "title": "精选集收录榜",
-                        "logo": "http://img.xiami.net/images/appv5/rank_list/ranking_list_xiami_collect.png",
-                        "logo_middle": "http://img.xiami.net/images/appv5/rank_list/ranking_list_xiami_collect.png",
+                        "logo": "https://img.xiami.net/images/appv5/rank_list/ranking_list_xiami_collect.png",
+                        "logo_middle": "https://img.xiami.net/images/appv5/rank_list/ranking_list_xiami_collect.png",
                         "update_date": "每天更新",
                         "type": "xiami_collect",
                         "show_type": 0,
                         "cycle_type": "daily",
                         "songs": [
                             {
-                                "song_name": "The Truth That You Leave",
-                                "song_id": 1769271562,
-                                "singers": "Pianoboy"
+                                "song_name": "小幸运",
+                                "song_id": 1774490672,
+                                "singers": "田馥甄"
+                            },
+                            {
+                                "song_name": "Traveling Light",
+                                "song_id": 3567313,
+                                "singers": "Joel Hanson;Sara Groves"
+                            },
+                            {
+                                "song_name": "New Soul",
+                                "song_id": 2087541,
+                                "singers": "Yael Naim"
                             },
                             {
                                 "song_name": "Kiss The Rain",
                                 "song_id": 3440144,
                                 "singers": "Yiruma"
-                            },
-                            {
-                                "song_name": "Luv Letter",
-                                "song_id": 1768983626,
-                                "singers": "DJ OKAWARI"
-                            },
-                            {
-                                "song_name": "小幸运",
-                                "song_id": 1774490672,
-                                "singers": "田馥甄"
                             }
                         ]
                     },
                     {
                         "title": "KTV嗨歌榜",
-                        "logo": "http://img.xiami.net/images/appv5/rank_list/ranking_list_xiami_ktv.png",
-                        "logo_middle": "http://img.xiami.net/images/appv5/rank_list/ranking_list_xiami_ktv.png",
+                        "logo": "https://img.xiami.net/images/appv5/rank_list/ranking_list_xiami_ktv.png",
+                        "logo_middle": "https://img.xiami.net/images/appv5/rank_list/ranking_list_xiami_ktv.png",
                         "update_date": "每天更新",
                         "type": "xiami_ktv",
                         "show_type": 0,
@@ -487,32 +487,32 @@ export default {
                     },
                     {
                         "title": "虾米分享榜",
-                        "logo": "http://img.xiami.net/images/appv5/rank_list/ranking_list_xiami_share.png",
-                        "logo_middle": "http://img.xiami.net/images/appv5/rank_list/ranking_list_xiami_share.png",
+                        "logo": "https://img.xiami.net/images/appv5/rank_list/ranking_list_xiami_share.png",
+                        "logo_middle": "https://img.xiami.net/images/appv5/rank_list/ranking_list_xiami_share.png",
                         "update_date": "每天更新",
                         "type": "xiami_share",
                         "show_type": 0,
                         "cycle_type": "daily",
                         "songs": [
                             {
+                                "song_name": "你就不要想起我",
+                                "song_id": 1772370552,
+                                "singers": "田馥甄"
+                            },
+                            {
                                 "song_name": "你曾是少年",
                                 "song_id": 1774321215,
                                 "singers": "S.H.E"
                             },
                             {
-                                "song_name": "你就不要想起我",
-                                "song_id": 1772370552,
+                                "song_name": "小幸运",
+                                "song_id": 1774490672,
                                 "singers": "田馥甄"
                             },
                             {
                                 "song_name": "浪费",
                                 "song_id": 1771093941,
                                 "singers": "林宥嘉"
-                            },
-                            {
-                                "song_name": "小幸运",
-                                "song_id": 1774490672,
-                                "singers": "田馥甄"
                             }
                         ]
                     }
@@ -520,5 +520,5 @@ export default {
             }
         ]
     },
-    "data-version": "40bb1d635593f012eefff30b80ba20ab"
+    "data-version": "4ae27b58e316b86cc672d9968a659f79"
 }
