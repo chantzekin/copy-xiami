@@ -12,11 +12,11 @@ const store = new Vuex.Store({
     state: {
         audio: {
             id: 0,
-            title: '想自由',
-            singer: '林宥嘉',
-            album: '美妙生活',
-            songUrl: 'https://om5.alicdn.com/517/23517/438628/1770182611_2283338_l.mp3?auth_key=3e2868f1122b056b74d569f363cccd5f-1488769200-0-null',
-            coverUrl: 'https://img.xiami.net/images/album/img17/23517/4386281386439629.jpg',
+            title: '虾米音乐，随心而动',
+            singer: '',
+            album: '',
+            songUrl: '',
+            coverUrl: '../static/cover.jpg',
         },
 
         currentTime: 0,
@@ -30,14 +30,7 @@ const store = new Vuex.Store({
 
         listInfo: {
             curListId: 0,
-            songList: [{
-                id: 0,
-                title: '想自由',
-                singer: '林宥嘉',
-                album: '美妙生活',
-                songUrl: 'https://om5.alicdn.com/517/23517/438628/1770182611_2283338_l.mp3?auth_key=3e2868f1122b056b74d569f363cccd5f-1488769200-0-null',
-                coverUrl: 'https://img.xiami.net/images/album/img17/23517/4386281386439629.jpg',
-            }],
+            songList: [],
             songIndex: 0
         },
 

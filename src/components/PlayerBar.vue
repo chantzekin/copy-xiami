@@ -14,7 +14,7 @@
                 </div>
                 <div class="info" @click="showPlayerDetail">
                     <div class="name">{{ audio.title }}</div>
-                    <div class="artist">{{ audio.singer }} - {{ audio.album }}</div>
+                    <div class="artist" v-if="audio.singer && audio.album">{{ audio.singer }} - {{ audio.album }}</div>
                 </div>
                 <div class="ctr">
                     <mu-icon-button :icon="isPlaying? 'pause' : 'play_arrow'" iconClass="icon-lg" @click="toggleStatus">
