@@ -1,7 +1,7 @@
 <template>
 
     <div class="player-detail">
-        <div class="player-detail__content">
+        <div class="player-detail__content" v-if="!isNoSong">
             <mu-appbar>
                 <mu-icon-button icon='expand_more' slot="left" @click="hidePlayerDetail" />
             </mu-appbar>
@@ -33,6 +33,12 @@
                 <mu-icon-button icon='more_horiz' slot="left" />
             </div>
         </div>
+        <div class="song-empty" v-else>
+            <div class="tip">
+                <mu-icon value="not_interested"></mu-icon>
+                <span>当前没有歌曲播放</span>
+            </div>
+        </div>
 
         <div class="mask">
             <div class="album-cover" :style="`background-image:url(${audio.coverUrl})`"></div>
@@ -54,6 +60,7 @@
             ...mapGetters([
                 'audio',
                 'player',
+                'isNoSong',
                 'isPlaying',
                 'currentTime',
                 'durationTime',
@@ -94,7 +101,7 @@
 </script>
 
 <style lang="scss" scoped>
-    .player-detail {
+    .player-detail, .song-empty {
         position: absolute;
         z-index: 999;
         left: 0;
@@ -103,6 +110,30 @@
         bottom: 0;
         overflow: hidden;
         background-color: #fff;
+    }
+
+    .song-empty{
+        background-color: transparent;
+        .tip {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: .3;
+            .mu-icon {
+                font-size: 128px;
+                color: #a8a8a8;
+                margin-bottom: 24px;
+            }
+            span{
+                color: #c8c8c8;
+            }
+        }
     }
     
     .player-detail__content {

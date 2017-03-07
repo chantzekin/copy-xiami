@@ -5,7 +5,7 @@
                 id="AudioPlay" 
                 @timeupdate="change" 
                 @ended="next" 
-                @error="next"
+                @error="error"
                 @canplay="canPlay">
             </audio>
             <div class="player-bar__content">
@@ -95,6 +95,13 @@
             canPlay(){
                 this.$store.commit('play');
                 document.getElementById('AudioPlay').play()
+            },
+            error(){
+                if(document.getElementById('AudioPlay').currentSrc){
+                    // 加载歌曲出错
+                } else{
+                    // 第一次加载
+                }
             }
         }
     }
@@ -224,7 +231,7 @@
             z-index: 6;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, .4);
+            background-color: rgba(0, 0, 0, .3);
         }
     }
 </style>

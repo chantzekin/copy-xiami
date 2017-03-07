@@ -16,8 +16,10 @@ const store = new Vuex.Store({
             singer: '',
             album: '',
             songUrl: '',
-            coverUrl: '../static/cover.jpg',
+            coverUrl: '../static/playbar-cover-empty-bg.jpg',
         },
+
+        isNoSong: true,
 
         currentTime: 0,
         durationTime: 0,
@@ -51,6 +53,7 @@ const store = new Vuex.Store({
             state.audio.coverUrl = state.audio.coverUrl.replace('webp', 'jpg');
             return state.audio;
         },
+        isNoSong: state => state.isNoSong,
         player: state => state.player,
         listInfo: state => state.listInfo,
 
