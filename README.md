@@ -8,9 +8,9 @@
 - axios
 - muse-ui
 
-先有问题
+现有问题
 
-- [] iOS 下 Safari 浏览器对 HTML Auido 的限制，autoplay 失效，导致切歌及选歌无法自动播放
+- [ ] iOS 下 Safari 浏览器对 HTML Auido 的限制，autoplay 失效，导致切歌及选歌无法自动播放
 
 
 [在线预览地址](https://naraku777.github.io/copy-xiami/) 
