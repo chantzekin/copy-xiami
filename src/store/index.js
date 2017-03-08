@@ -16,7 +16,7 @@ const store = new Vuex.Store({
             singer: '',
             album: '',
             songUrl: '',
-            coverUrl: '../static/playbar-cover-empty-bg.jpg',
+            coverUrl: 'static/playbar-cover-empty-bg.jpg',
         },
 
         isNoSong: true,

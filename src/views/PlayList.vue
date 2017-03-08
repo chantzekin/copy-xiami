@@ -105,12 +105,12 @@
                     author: {
                         name: '作者'
                     },
-                    cover: '../../static/cover.jpg',
+                    cover: 'static/cover.jpg',
                     tags: ['标签'],
                     comments: 0,
                     collects: 0,
                     songList: [
-                        { name: '歌曲名', artists: [{ name: '艺人' }], album: { cover: '../static/cover.jpg' } }
+                        { name: '歌曲名', artists: [{ name: '艺人' }], album: { cover: 'static/cover.jpg' } }
                     ]
                 },
                 error: []
@@ -176,10 +176,10 @@
                 // 加载页面时预先显示的数据，替换缓存
                 playList.id = vm.$route.id;
                 playList.name = vm.$route.params.name;
-                playList.cover = vm.$route.params.cover || '../static/cover.jpg';
+                playList.cover = vm.$route.params.cover || 'static/cover.jpg';
                 playList.collects = vm.$route.params.playCount;
                 playList.author.name = vm.$route.params.author;
-                playList.songList = [{ name: '歌曲名', artists: [{ name: '艺人' }], album: { cover: '../static/cover.jpg' } }]
+                playList.songList = [{ name: '歌曲名', artists: [{ name: '艺人' }], album: { cover: 'static/cover.jpg' } }]
                 vm.get();
             })
         },
