@@ -118,6 +118,7 @@ const store = new Vuex.Store({
                 song.songUrl = item.file;
                 return song;
             });
+            state.isNoSong = false;
 
             state.listInfo.songIndex = index;
         },

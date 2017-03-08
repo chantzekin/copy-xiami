@@ -1,44 +1,49 @@
 <template>
 
-    <div class="player-detail">
-        <div class="player-detail__content" v-if="!isNoSong">
+    <div class="player-detail">        
+        <div class="player-detail__content">                    
             <mu-appbar>
                 <mu-icon-button icon='expand_more' slot="left" @click="hidePlayerDetail" />
             </mu-appbar>
-            <div class="cover">
-                <img :src="audio.coverUrl  | formatImageExt">
-            </div>
-            <div class="process">
-                <mu-slider v-model="currentTimePercent" @change="changeTime" />
-                <div class="time">
-                    <time id="cur">{{ currentTime | formatTime }}</time>
-                    <time id="total">{{ durationTime | formatTime }}</time>
+            <template v-if="!isNoSong">
+                <div class="cover">
+                    <img :src="audio.coverUrl  | formatImageExt">
                 </div>
-            </div>
-            <div class="info">
-                <mu-icon-button icon='favorite_border' slot="left" />
-                <div>
-                    <div class="name">{{ audio.title }}</div>
-                    <div class="singer">{{ audio.singer }} - {{ audio.album }}</div>
+                <div class="process">
+                    <mu-slider v-model="currentTimePercent" @change="changeTime" />
+                    <div class="time">
+                        <time id="cur">{{ currentTime | formatTime }}</time>
+                        <time id="total">{{ durationTime | formatTime }}</time>
+                    </div>
                 </div>
-                <mu-icon-button icon='chat_bubble_outline' slot="left" />
-            </div>
+                <div class="info">
+                    <mu-icon-button icon='favorite_border' slot="left" />
+                    <div>
+                        <div class="name">{{ audio.title }}</div>
+                        <div class="singer">{{ audio.singer }} - {{ audio.album }}</div>
+                    </div>
+                    <mu-icon-button icon='chat_bubble_outline' slot="left" />
+                </div>
 
-            <div class="ctr">
-                <mu-icon-button icon='shuffle' slot="left" />
-                <mu-icon-button class="skip" icon='skip_previous' slot="left" @click="prev" />
-                <mu-icon-button class="play-pause" @click="toggleStatus()" :icon='!isPlaying? "play_circle_outline" : "pause_circle_outline"'
-                    slot="left" />
-                <mu-icon-button class="skip" icon='skip_next' slot="left" @click="next" />
-                <mu-icon-button icon='more_horiz' slot="left" />
-            </div>
+                <div class="ctr">
+                    <mu-icon-button icon='shuffle' slot="left" />
+                    <mu-icon-button class="skip" icon='skip_previous' slot="left" @click="prev" />
+                    <mu-icon-button class="play-pause" @click="toggleStatus()" :icon='!isPlaying? "play_circle_outline" : "pause_circle_outline"'
+                        slot="left" />
+                    <mu-icon-button class="skip" icon='skip_next' slot="left" @click="next" />
+                    <mu-icon-button icon='more_horiz' slot="left" />
+                </div>
+            </template>
+            <template v-else>
+                <div class="song-empty">
+                    <div class="tip">
+                        <mu-icon value="album"></mu-icon>
+                        <span>当前没有歌曲播放</span>
+                    </div>
+                </div>
+            </template>
         </div>
-        <div class="song-empty" v-else>
-            <div class="tip">
-                <mu-icon value="not_interested"></mu-icon>
-                <span>当前没有歌曲播放</span>
-            </div>
-        </div>
+        
 
         <div class="mask">
             <div class="album-cover" :style="`background-image:url(${audio.coverUrl})`"></div>
@@ -114,6 +119,7 @@
 
     .song-empty{
         background-color: transparent;
+        top: 56px;
         .tip {
             position: absolute;
             left: 0;
@@ -121,12 +127,13 @@
             top: 0;
             bottom: 0;
             display: flex;
+            margin-top: -256px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            opacity: .3;
+            opacity: .5;
             .mu-icon {
-                font-size: 128px;
+                font-size: 256px;
                 color: #a8a8a8;
                 margin-bottom: 24px;
             }
