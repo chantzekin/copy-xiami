@@ -3,7 +3,10 @@
         <mu-list class="collect-list">
             <mu-sub-header>推荐</mu-sub-header>
             <template v-for="collect in collects">
-                <mu-list-item class="collect-item-wrapper">
+                <mu-list-item 
+                    class="collect-item-wrapper" 
+                    @click.native="toPlayList(collect)"
+                >
                     <div class="collect-item">
                         <div class="collect-item__cover">
                             <img :src="collect.collect_logo" />
@@ -40,6 +43,25 @@
             playCount
         },
         created() {
+        },
+        methods: {
+            toPlayList(collect) {
+                var id;
+
+                id = collect.list_id;
+
+                this.$router.push({
+                    name: 'playList',
+                    params: { 
+                        id: id,
+                        name: collect.collect_name,
+                        cover: collect.collect_logo,
+                        playCount: collect.play_count,
+                        author: collect.user_name
+                    }
+                });
+
+            }
         }
     }
 
