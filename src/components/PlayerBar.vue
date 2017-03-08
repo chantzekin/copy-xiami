@@ -14,16 +14,29 @@
                 </div>
                 <div class="info" @click="showPlayerDetail">
                     <div class="name">{{ audio.title }}</div>
-                    <div class="artist" v-if="audio.singer && audio.album">{{ audio.singer }} - {{ audio.album }}</div>
+                    <div class="artist" v-if="audio.singer && audio.album">
+                        {{ audio.singer }} - {{ audio.album }}
+                    </div>
                 </div>
                 <div class="ctr">
-                    <mu-icon-button :icon="isPlaying? 'pause' : 'play_arrow'" iconClass="icon-lg" @click="toggleStatus">
+                    <mu-icon-button 
+                        :icon="isPlaying? 'pause' : 'play_arrow'" 
+                        iconClass="icon-lg" 
+                        @click="toggleStatus"
+                    >
                     </mu-icon-button>
                     <mu-icon-button icon="skip_next" iconClass="icon-lg" @click="next" />
                 </div>
                 <div class="pro">
-                    <div class="pro-load proload" :style="{'-webkit-transform':'translateX(' + bufferedTimePercent +'%)' }"></div>
-                    <div class="pro-play proplay" :style="{'-webkit-transform':'translateX(' + currentTimePercent +'%)' }"></div>
+                    <div 
+                        class="pro-load proload" 
+                        :style="{'-webkit-transform':'translateX(' + bufferedTimePercent +'%)' }"
+                    >
+                    </div>
+                    <div class="pro-play proplay" 
+                        :style="{'-webkit-transform':'translateX(' + currentTimePercent +'%)' }"
+                    >
+                    </div>
                 </div>
             </div>
 
@@ -93,7 +106,7 @@
                 this.$store.dispatch('playNext');
             },
             canPlay(){
-                this.$store.commit('play');
+                this.$store.commit('play')
                 document.getElementById('AudioPlay').play()
             },
             error(){
