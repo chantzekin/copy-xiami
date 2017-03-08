@@ -10,8 +10,7 @@
 
 现有问题
 
-- [ ] iOS 下 Safari 浏览器对 HTML Auido 的限制，autoplay 失效，导致切歌及选歌无法自动播放
-      [克服 iOS HTML5 音频的局限](http://www.ibm.com/developerworks/cn/web/wa-ioshtml5/index.html)
+- [ ] iOS 下 Safari 浏览器对 HTML Auido 的限制，autoplay 失效，导致切歌及选歌无法自动播放，桌面浏览器没问       题。[克服 iOS HTML5 音频的局限](http://www.ibm.com/developerworks/cn/web/wa-ioshtml5/index.html)
 
 
 [在线预览地址](https://naraku777.github.io/copy-xiami/) 
