@@ -47,7 +47,9 @@
             <div class="play-list_bd">
                 <mu-list>
                     <mu-sub-header class="song-list__hd">
-                        <div class="left">
+                        <div class="left"
+                            @click="playAudio(0)"
+                        >
                             <mu-icon value="play_circle_outline"></mu-icon>
                             全部播放 {{ playList.songCount }}首
                         </div>
@@ -66,7 +68,8 @@
                             </div>
                             <mu-list-item class="content" 
                                 :title="song.name" 
-                                @click="playAudio(index)">
+                                @click="playAudio(index)"
+                            >
                                 <span slot="describe">
                                     <span v-for="artist in song.artists">
                                         <template>
