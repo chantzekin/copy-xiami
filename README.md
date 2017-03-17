@@ -17,11 +17,11 @@
 
 ## 截图预览
 
-![](http://p1.bqimg.com/567571/6992aaaed2e4f8b9.jpg)
-![](http://p1.bqimg.com/567571/674b0bd219fd74e0.jpg)
-![](http://p1.bqimg.com/567571/e39e673d1258ef3c.jpg)
-![](http://i1.piimg.com/567571/1c9118e73382492a.jpg)
-![](http://i1.piimg.com/567571/abcb90deb701cb2b.jpg)
+![](https://github.com/Naraku777/copy-xiami/blob/master/screenshot/46065A6A6992AAAED2E4F8B97E6A6133.jpg)
+![](https://github.com/Naraku777/copy-xiami/blob/master/screenshot/2E812567674B0BD219FD74E01B051F72.jpg)
+![](https://github.com/Naraku777/copy-xiami/blob/master/screenshot/46065A6A6992AAAED2E4F8B97E6A6133.jpg)
+![](https://github.com/Naraku777/copy-xiami/blob/master/screenshot/826DA3341C9118E73382492A54C48606.jpg)
+![](https://github.com/Naraku777/copy-xiami/blob/master/screenshot/89AF1B01ABCB90DEB701CB2BFA4C1710.jpg)
 
 
 
