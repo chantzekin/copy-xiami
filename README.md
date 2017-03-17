@@ -19,7 +19,7 @@
 
 ![](https://github.com/Naraku777/copy-xiami/blob/master/screenshot/46065A6A6992AAAED2E4F8B97E6A6133.jpg)
 ![](https://github.com/Naraku777/copy-xiami/blob/master/screenshot/2E812567674B0BD219FD74E01B051F72.jpg)
-![](https://github.com/Naraku777/copy-xiami/blob/master/screenshot/46065A6A6992AAAED2E4F8B97E6A6133.jpg)
+![](https://github.com/Naraku777/copy-xiami/blob/master/screenshot/EDDB38B1E39E673D1258EF3C66579AA1.jpg)
 ![](https://github.com/Naraku777/copy-xiami/blob/master/screenshot/826DA3341C9118E73382492A54C48606.jpg)
 ![](https://github.com/Naraku777/copy-xiami/blob/master/screenshot/89AF1B01ABCB90DEB701CB2BFA4C1710.jpg)
 
