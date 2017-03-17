@@ -1,90 +1,87 @@
 export default {
   "state": 0,
   "message": "",
-  "request_id": "0ab6004714889456775603768e",
+  "request_id": "0ab51f3a14897417062413885e",
   "data": {
-    "list": [
-      {
+    "list": [{
         "type": "1_normal",
         "layout": 1,
-        "banner": [
-          {
-            "id": 197,
-            "logo": "https://pic.xiami.net/images/common/uploadpic/52/1488934697252.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
-            "title": "女神节——致独一无二的你",
+        "banner": [{
+            "id": 248,
+            "logo": "https://pic.xiami.net/images/common/uploadpic/67/1489720705267.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
+            "title": "词汇19期-专题-森深",
             "height": 315,
             "width": 720,
-            "url": "xiami://collect/269079342"
+            "url": "xiami://open?url=https://alimusic.xiami.com/markets/xiami/cihui19"
           },
           {
-            "id": 199,
-            "logo": "https://pic.xiami.net/images/common/uploadpic/96/1488935043296.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
-            "title": "李雨首张个人EP《鲤语》",
+            "id": 247,
+            "logo": "https://pic.xiami.net/images/common/uploadpic/24/1489717469124.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
+            "title": "专治无聊-精选集-旋乐",
             "height": 315,
             "width": 720,
-            "url": "xiami://open?url=https://alimusic.xiami.com/markets/xiami/liyu?playerBarMode=showPlayerBar"
+            "url": "xiami://collect/274489214"
           },
           {
-            "id": 203,
-            "logo": "https://pic.xiami.net/images/common/uploadpic/48/1488942584848.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
-            "title": "请回答1987-精选集-玄三",
+            "id": 245,
+            "logo": "https://pic.xiami.net/images/common/uploadpic/96/1489714161696.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
+            "title": "请回答1993-精选集-玄三",
             "height": 315,
             "width": 720,
-            "url": "xiami://collect/274406195"
+            "url": "xiami://collect/274492449"
           },
           {
-            "id": 198,
-            "logo": "https://pic.xiami.net/images/common/uploadpic/8/1488934804808.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
-            "title": "三八女神节从身体到心灵活动",
+            "id": 238,
+            "logo": "https://pic.xiami.net/images/common/uploadpic/10/1489624765810.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
+            "title": "传说 MKB48-首发-旋乐",
             "height": 315,
             "width": 720,
-            "url": "xiami://open?url=https://alimusic.xiami.com/markets/xiami/womanday?wh_ttid=phone"
+            "url": "xiami://open?url=https://alimusic.xiami.com/markets/xiami/Legend?wh_ttid=phone"
           },
           {
-            "id": 195,
-            "logo": "https://pic.xiami.net/images/common/uploadpic/26/1488852024226.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
-            "title": "我有个恋爱和你谈一下-歌单-大柠",
+            "id": 244,
+            "logo": "https://pic.xiami.net/images/common/uploadpic/48/1489654950148.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
+            "title": "上班路上,听什么不无聊？-专题-大莱",
             "height": 315,
             "width": 720,
-            "url": "xiami://collect/273722633"
+            "url": "xiami://open?url=https://alimusic.xiami.com/markets/xiami/collection201703"
           },
           {
-            "id": 192,
-            "logo": "https://pic.xiami.net/images/common/uploadpic/22/1488851667122.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
-            "title": "每周新歌精选-精选集-森深",
+            "id": 240,
+            "logo": "https://pic.xiami.net/images/common/uploadpic/23/1489586047223.jpg@1e_1c_0i_1o_100Q_720w_315h.jpg",
+            "title": "虾米音乐人周刊第99期-歌单-为宝",
             "height": 315,
             "width": 720,
-            "url": "xiami://collect/274408720"
+            "url": "xiami://collect/273783850"
           }
         ]
       },
       {
         "layout": 16,
         "type": "20_normal",
-        "radios": [
-          {
+        "radios": [{
             "title": "猜你喜欢",
             "sub_title": "",
             "url": "xiami://radio/guess",
-            "logo": "https://img.xiami.net/images/common/uploadpic/8/14888852084384.png"
+            "logo": "https://img.xiami.net/images/common/uploadpic/6/14860216066079.png"
           },
           {
             "title": "最新最热",
             "sub_title": "",
             "url": "xiami://radio/1174783",
-            "logo": "https://img.xiami.net/images/common/uploadpic/9/14888852094095.png"
+            "logo": "https://img.xiami.net/images/common/uploadpic/37/14869843378831.png"
           },
           {
-            "title": "女神节",
+            "title": "又到周末",
             "sub_title": "",
-            "url": "xiami://radio/1179839",
-            "logo": "https://img.xiami.net/images/common/uploadpic/12/14888852126686.png"
+            "url": "xiami://radio/1167430",
+            "logo": "https://img.xiami.net/images/common/uploadpic/14/14860216144248.png"
           },
           {
             "title": "听歌识曲",
             "sub_title": "",
             "url": "xiami://soundhound",
-            "logo": "https://img.xiami.net/images/common/uploadpic/14/14888852146195.png"
+            "logo": "https://img.xiami.net/images/common/uploadpic/19/14860216191740.png"
           }
         ],
         "radio_status": true
@@ -92,8 +89,7 @@ export default {
       {
         "layout": 10,
         "type": "10_operation",
-        "collections": [
-          {
+        "collections": [{
             "name": "每日推荐30首",
             "logo": "https://pic.xiami.net/images/app/dailysong/logo/dailysonglogo_586_v3.png@1e_1c_0i_1o_100Q_180w_180h.jpg",
             "play_count": 0,
@@ -103,47 +99,47 @@ export default {
             "is_musician": false
           },
           {
-            "name": "那些年一个人看过故事音乐",
-            "logo": "https://pic.xiami.net/images/collect/229/29/246099229_58370bd24f3fb_5pf4_1480002514.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "play_count": 1549,
-            "author": "alvinale丨樂",
-            "url": "xiami://collect/246099229",
+            "name": "寂静边境",
+            "logo": "https://pic.xiami.net/images/collect/475/75/10087475_1331796232.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "play_count": 2853,
+            "author": "此木为柴",
+            "url": "xiami://collect/10087475",
             "is_musician": false,
             "album_status": 0
           },
           {
-            "name": "2016粵勢力．粵樂作（第三季）",
-            "logo": "https://pic.xiami.net/images/collect/909/9/191565909_5790a5452dc05_8CPU_1469097285.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "play_count": 2226,
-            "author": "jason-kong",
-            "url": "xiami://collect/191565909",
+            "name": "阅读时用来听【私】",
+            "logo": "https://pic.xiami.net/images/collect/573/73/42118573_1426145113_CWXA.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "play_count": 85872,
+            "author": "Yvonne",
+            "url": "xiami://collect/42118573",
             "is_musician": false,
             "album_status": 0
           },
           {
-            "name": "天空之镜 梦之彼岸 (Ambient/Post-Rock/Electronic 纯乐)",
-            "logo": "https://pic.xiami.net/images/collect/629/29/21599629_1369238776.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "play_count": 215217,
-            "author": "汐影",
-            "url": "xiami://collect/21599629",
+            "name": "不喧哗.自有声•听自己听一场雨",
+            "logo": "https://pic.xiami.net/images/collect/792/92/39608792_1423413540_kA28.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "play_count": 115286,
+            "author": "宅厨房的妖怪",
+            "url": "xiami://collect/39608792",
             "is_musician": false,
             "album_status": 0
           },
           {
-            "name": "氛围钢琴[2]  侧耳倾听，细数黑白剪影。",
-            "logo": "https://pic.xiami.net/images/collect/165/65/41014165_1488355744_VhGh.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "play_count": 194972,
-            "author": "木一",
-            "url": "xiami://collect/41014165",
+            "name": "后摇精选----【风潜入夜】（post-rock）",
+            "logo": "https://pic.xiami.net/images/collect/654/54/35861654_1413126440_BOHh.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "play_count": 100458,
+            "author": "二狗子他老爹",
+            "url": "xiami://collect/35861654",
             "is_musician": false,
             "album_status": 0
           },
           {
-            "name": "2016年冬天，痛得沉重，爱得轻松",
-            "logo": "https://pic.xiami.net/images/collect/104/4/243096104_584be46b05cfd_KQdY_1481368683.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
-            "play_count": 495,
-            "author": "林懿聲",
-            "url": "xiami://collect/243096104",
+            "name": "雨，钢琴，城市和你",
+            "logo": "https://pic.xiami.net/images/collect/164/64/273775164_1489480686_E7pF.jpg@1e_1c_0i_1o_100Q_180w_180h.jpg",
+            "play_count": 834,
+            "author": "KOOKLICON",
+            "url": "xiami://collect/273775164",
             "is_musician": false,
             "album_status": 0
           }
@@ -155,5 +151,5 @@ export default {
     ],
     "more": false
   },
-  "data-version": "b5369060b15ad72a987a8ef79fd4cf14"
+  "data-version": "d5be1ea4c70a49d0513a7fe1d49b2533"
 }
