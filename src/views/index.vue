@@ -4,7 +4,10 @@
         <div class="topbar-fix">
             <mu-appbar title="虾米音乐">
                 <mu-icon-button icon='menu' slot="left" />
-                <mu-icon-button icon='search' slot="right" />
+                <div slot="right">
+                    <mu-icon-button icon='search' />
+                    <mu-icon-button icon='code' @click="toGithub" />
+                </div>                
             </mu-appbar>
             <mu-tabs class="view-tabs" :value="activeTab" @change="handleTabChange">
                 <mu-tab value="home" title="首页" />
@@ -51,6 +54,9 @@
             handleTabChange(val) {
                 this.activeTab = val
                 this.$router.replace({ path: '/index/' + val })
+            },
+            toGithub(){
+                window.open("https://github.com/Naraku777/copy-xiami");
             }
         }
     }
