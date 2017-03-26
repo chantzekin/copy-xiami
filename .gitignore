@@ -4,3 +4,4 @@ test/
 .vscode/
 npm-debug.log
 debug.log
+.eslintrc.json
